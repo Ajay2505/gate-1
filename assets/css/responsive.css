@@ -1,0 +1,31 @@
+@import url('style.css');
+
+@media only screen and (min-width:1452px) {
+    .section_2 .sec_2_content_wrapper h1{
+        font-size: clamp(40px, 18.5vw, 260px);
+    }
+}
+
+@media only screen and (max-width:1399px) {
+    .section_2 .sec_2_content_wrapper h1{
+        font-size: clamp(40px, 18.5vw, 230px);
+    }
+}
+
+@media only screen and (max-width:1199px) {
+    .section_2 .sec_2_content_wrapper h1{
+        font-size: clamp(40px, 18.5vw, 190px);
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .section_2 .sec_2_content_wrapper h1{
+        font-size: clamp(40px, 18.5vw, 140px);
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .section_2 .sec_2_content_wrapper h1{
+        font-size: clamp(40px, 18.5vw, 100px);
+    }
+}
