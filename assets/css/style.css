@@ -1193,13 +1193,13 @@ section.features .container {
   border-inline: 1px solid #cfcfcf;
 }
 section.features .container .heading {
-  font-size: var(--heading_sec);
   color: var(--changing-variable-background-color);
 }
 section.features .container h4.heading {
   color: var(--changing-variable-background-color);
 }
 section.features .container p {
+  margin: 0;
   color: var(--heading-color);
 }
 section.features .container .p_bl {

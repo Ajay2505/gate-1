@@ -1287,7 +1287,7 @@ section.features {
   .container {
     border-inline: 1px solid $line-color;
     .heading {
-      font-size: var(--heading_sec);
+      // font-size: var(--heading_sec);
       color: var(--changing-variable-background-color);
     }
     h4 {
@@ -1297,6 +1297,7 @@ section.features {
       }
     }
     p {
+      margin: 0;
       color: var(--heading-color);
     }
     .p_bl {
