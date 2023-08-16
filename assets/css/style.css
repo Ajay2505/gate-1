@@ -1196,9 +1196,6 @@ section.features .container .heading {
   font-size: var(--heading_sec);
   color: var(--changing-variable-background-color);
 }
-section.features .container h4 {
-  font-size: var(--heading_ter);
-}
 section.features .container h4.heading {
   color: var(--changing-variable-background-color);
 }
