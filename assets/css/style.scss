@@ -139,6 +139,11 @@ button {
   transition: transform 0.3s ease;
 }
 
+button:disabled {
+  cursor: not-allowed;
+  opacity: .5;
+}
+
 button.gray_btn {
   background-color: $background-color-unedited;
   font-weight: 500;
@@ -964,6 +969,15 @@ footer {
 
 .section2 {
   color: var(--heading-color);
+  &.copy .liner .content_wrapper .faq {
+    padding-block: 0;
+  }
+  &.copy .liner .content_wrapper .faq .acc_wrapper {
+    margin-top: 30px;
+  }
+  &.copy .liner .content_wrapper {
+    padding-bottom: 50px;
+  }
   &.liner_b {
     border-bottom: 1px solid $line-color;
   }
@@ -975,9 +989,23 @@ footer {
       color: var(--changing-variable-background-color);
     }
     .content_wrapper {
-      padding-block: 70px;
-      .cards {
-        padding-block: 100px;
+      padding-top: 100px;
+      button.explore_btn {
+        background-color: #085dbf;
+        font-weight: 500;
+        color: #fff;
+        padding: 7px 16px;
+        width: -moz-fit-content;
+        width: fit-content;
+        border: none;
+        outline: none;
+        text-align: center;
+      }
+      .cards { 
+        padding-block: 60px;
+        &:first-child {
+          padding-block: 100px; /* You can adjust the padding value as needed */
+        }
         .card_wrapper {
           background-color: $background-color;
           height: 100%;
@@ -1069,12 +1097,13 @@ footer {
         }
       }
       .faq {
+        padding-block: 100px;
         // .img_wrapper {
         //   filter: grayscale(1);
         // }
         h2 {
           font-size: var(--heading_sec);
-          margin-bottom: 20px;
+          margin-bottom: 10px;
           color: $background-color-unedited;
         }
         .acc_wrapper {
@@ -1194,7 +1223,7 @@ footer {
         }
         .img_wrapper {
           max-width: 150px;
-          max-height: 150px;
+          // max-height: 150px;
           overflow: hidden;
           filter: grayscale(1);
           transition: filter 0.3s ease;
@@ -1225,9 +1254,14 @@ footer {
 
 section.work {
   background-color: #ddd;
-  padding-top: 30px;
+  color: #000;
+  padding-block: 50px;
   h1 {
     color: var(--changing-variable-background-color);
+  }
+  .second {
+    padding-top: 90px;
+    padding-bottom: 50px;
   }
   .card {
     background-color: transparent;
@@ -1284,6 +1318,9 @@ section.work {
 
 section.features {
   color: #000;
+  &.copy .container .checks {
+    margin-block: 20px;
+  }
   .container {
     border-inline: 1px solid $line-color;
     .heading {

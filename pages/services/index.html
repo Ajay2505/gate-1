@@ -1,589 +1,719 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GATE</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
-    <link rel="stylesheet" href="/assets/css/bootstrap-css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/fancybox/fancybox.min.css">
-    <link rel="stylesheet" href="/assets/css/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/assets/css/responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GATE</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+  <link rel="stylesheet" href="/assets/css/bootstrap-css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/fancybox/fancybox.min.css">
+  <link rel="stylesheet" href="/assets/css/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div class="nav_wrapper">
-                <a href="/" class="logo_wrapper">
-                    <img src="/assets/images/logo.png" class="logo" alt="" srcset="">
-                </a>
-                <div class="nav_options">
-                    <div class="nav_upper">
-                        <ul class="upper">
-                            <li><a href="#">ABOUT US</a></li>
-                            <li><a href="#">RESOURCES</a></li>
-                            <li><a href="#">START WORKING WITH US</a></li>
-                        </ul>
+  <header>
+    <div class="container">
+      <div class="nav_wrapper">
+        <a href="/" class="logo_wrapper">
+          <img src="/assets/images/logo.png" class="logo" alt="" srcset="">
+        </a>
+        <div class="nav_options">
+          <div class="nav_upper">
+            <ul class="upper">
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">RESOURCES</a></li>
+              <li><a href="#">START WORKING WITH US</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="nav_lower">
+        <ul class="lower">
+          <li class="menu_itself">
+            <div class="inner_wrapper">
+              <a href="">Industries</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10"
+                  height="10" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                  <path
+                    d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                </svg></span>
+            </div>
+            <div class="menu__wrapper">
+              <ul class="menu__submenu">
+                <li class="menu__subitem">
+                  <a href="/engineering/">
+                    <div class="menu__subitem-title">Software Development</div>
+                    <div class="menu__text">
+                      <p>Development of trouble-free software for thermal power enterprises.</p>
                     </div>
-                </div>
+                  </a>
+                </li>
+
+                <li class="menu__subitem">
+                  <a href="/engineering/">
+                    <div class="menu__subitem-title">ASCAPC</div>
+                    <div class="menu__text">
+                      <p>Automated systems of electric energy and energy resources are becoming</p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="menu__subitem">
+                  <a href="/engineering/">
+                    <div class="menu__subitem-title">Telemecanique</div>
+                    <div class="menu__text">
+                      <p>We provides complete solutions with a range of components </p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="menu__subitem">
+                  <a href="/engineering/">
+                    <div class="menu__subitem-title">Planning</div>
+                    <div class="menu__text">
+                      <p>Our planning specialists think through everything down </p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="menu__subitem">
+                  <a href="/engineering/">
+                    <div class="menu__subitem-title">Cogeneration</div>
+                    <div class="menu__text">
+                      <p>The heat is used for heating and the production of </p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="menu__subitem">
+                  <a href="/engineering/">
+                    <div class="menu__subitem-title">Electrics</div>
+                    <div class="menu__text">
+                      <p>We provide professional installation of electrical equipment </p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="menu__subitem">
+                  <a href="/engineering/">
+                    <div class="menu__subitem-title">Water supply</div>
+                    <div class="menu__text">
+                      <p>Advanced cooling with water in a closed circuit.</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="nav_lower">
-                <ul class="lower">
-                    <li class="menu_itself">
-                        <div class="inner_wrapper">
-                            <a href="">Industries</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
-                                    fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-                                </svg></span>
-                        </div>
-                        <div class="menu__wrapper">
-                            <ul class="menu__submenu">
-                                <li class="menu__subitem">
-                                    <a href="/engineering/">
-                                    <div class="menu__subitem-title">Software Development</div>
-                                    <div class="menu__text">
-                                        <p>Development of trouble-free software for thermal power enterprises.</p>
-                                    </div>
-                                    </a>
-                                </li>
-
-                                <li class="menu__subitem">
-                                    <a href="/engineering/">
-                                    <div class="menu__subitem-title">ASCAPC</div>
-                                    <div class="menu__text">
-                                        <p>Automated systems of electric energy and energy resources are becoming</p>
-                                    </div>
-                                    </a>
-                                </li>
-
-                                <li class="menu__subitem">
-                                    <a href="/engineering/">
-                                    <div class="menu__subitem-title">Telemecanique</div>
-                                    <div class="menu__text">
-                                        <p>We provides complete solutions with a range of components </p>
-                                    </div>
-                                    </a>
-                                </li>
-
-                                <li class="menu__subitem">
-                                    <a href="/engineering/">
-                                    <div class="menu__subitem-title">Planning</div>
-                                    <div class="menu__text">
-                                        <p>Our planning specialists think through everything down </p>
-                                    </div>
-                                    </a>
-                                </li>
-
-                                <li class="menu__subitem">
-                                    <a href="/engineering/">
-                                    <div class="menu__subitem-title">Cogeneration</div>
-                                    <div class="menu__text">
-                                        <p>The heat is used for heating and the production of </p>
-                                    </div>
-                                    </a>
-                                </li>
-
-                                <li class="menu__subitem">
-                                    <a href="/engineering/">
-                                    <div class="menu__subitem-title">Electrics</div>
-                                    <div class="menu__text">
-                                        <p>We provide professional installation of electrical equipment </p>
-                                    </div>
-                                    </a>
-                                </li>
-
-                                <li class="menu__subitem">
-                                    <a href="/engineering/">
-                                    <div class="menu__subitem-title">Water supply</div>
-                                    <div class="menu__text">
-                                        <p>Advanced cooling with water in a closed circuit.</p>
-                                    </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="menu_itself" >
-                        <div class="inner_wrapper">
-                            <a href="">Capabilities</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
-                                    fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-                                </svg></span>
-                        </div>
-                        <div class="menu__wrapper">
-                            <ul class="menu__submenu">
-                              <li class="menu__subitem">
-                                <a href="/procurement/">
-                                  <div class="menu__subitem-title">Logistics and transport</div>
-                                  <div class="menu__text">
-                                    <p>We deliver any goods anywhere in the world. Thanks to our regional.</p>
-                                  </div>
-                                </a>
-                              </li>
-            
-                              <li class="menu__subitem">
-                                <a href="/procurement/">
-                                  <div class="menu__subitem-title">Purchase</div>
-                                  <div class="menu__text">
-                                    <p>We buy industrial equipment. From Escalators to crypto mining hardware</p>
-                                  </div>
-                                </a>
-                              </li>
-            
-                              <li class="menu__subitem">
-                                <a href="/procurement/">
-                                  <div class="menu__subitem-title">Equipment and materials</div>
-                                  <div class="menu__text">
-                                    <p>Modern and ecological materials based on innovative technologies</p>
-                                  </div>
-                                </a>
-                              </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="menu_itself">
-                        <div class="inner_wrapper">
-                            <a href="">Engineering</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10"
-                                    height="10" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-                                </svg></span>
-                        </div>
-                        <div class="menu__wrapper menu__wrapper--center" style="left:0;">
-                            <ul class="menu__submenu">
-                              <li class="menu__subitem">
-                                <a href="construction.php">
-                                  <div class="menu__subitem-title">Electrical installation</div>
-                                  <div class="menu__text">
-                                    <p>Modernization of premiums to modern technological standards in power grids</p>
-                                  </div>
-                                </a>
-                              </li>
-            
-                              <li class="menu__subitem">
-                                <a href="/construction/">
-                                  <div class="menu__subitem-title">Construction</div>
-                                  <div class="menu__text">
-                                    <p>Modern building technology and experience contributes to fast </p>
-                                  </div>
-                                </a>
-                              </li>
-            
-                              <li class="menu__subitem">
-                                <a href="/construction/">
-                                  <div class="menu__subitem-title">Green Energy</div>
-                                  <div class="menu__text">
-                                    <p>Care and conservation of natural resources is our main policy</p>
-                                  </div>
-                                </a>
-                              </li>
-            
-                              <li class="menu__subitem">
-                                <a href="/construction/">
-                                  <div class="menu__subitem-title">Heat recovery</div>
-                                  <div class="menu__text">
-                                    <p>Innovative heat recovery system with the help of heat removal</p>
-                                  </div>
-                                </a>
-                              </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="menu_itself">
-                        <div class="inner_wrapper">
-                            <a href="">Manufacturing</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10"
-                                    height="10" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-                                </svg></span>
-                        </div>
-                        <div class="menu__wrapper" style="left:0;">
-                            <ul class="menu__submenu">
-                              <li class="menu__subitem">
-                                <a href="/marker/">
-                                  <div class="menu__subitem-title">Energy</div>
-                                  <div class="menu__text">
-                                    <p>Extensive experience in construction and real-time monitoring</p>
-                                  </div>
-                                </a>
-                              </li>
-            
-                              <li class="menu__subitem">
-                                <a href="/marker/">
-                                  <div class="menu__subitem-title">Infrastructure</div>
-                                  <div class="menu__text">
-                                    <p>Creation of efficiency and eco-friendly urban and industrial</p>
-                                  </div>
-                                </a>
-                              </li>
-            
-                              <li class="menu__subitem">
-                                <a href="/marker/">
-                                  <div class="menu__subitem-title">Electricity</div>
-                                  <div class="menu__text">
-                                    <p>We focus on the most efficient methods of consumption</p>
-                                  </div>
-                                </a>
-                              </li>
-            
-                              <li class="menu__subitem">
-                                <a href="/marker/">
-                                  <div class="menu__subitem-title">Big data analytics</div>
-                                  <div class="menu__text">
-                                    <p>Own software and experienced specialists for data </p>
-                                  </div>
-                                </a>
-                              </li>
-            
-                              <li class="menu__subitem">
-                                <a href="/marker/">
-                                  <div class="menu__subitem-title">Logistics</div>
-                                  <div class="menu__text">
-                                    <p>Experience in creating logistics hubs and delivering anywhere in the world</p>
-                                  </div>
-                                </a>
-                              </li>
-            
-                              <li class="menu__subitem">
-                                <a href="/marker/">
-                                  <div class="menu__subitem-title">Trends in data analytics</div>
-                                  <div class="menu__text">
-                                    <p>Investments in promising technology industries that help us </p>
-                                  </div>
-                                </a>
-                              </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
+          </li>
+          <li class="menu_itself">
+            <div class="inner_wrapper">
+              <a href="">Capabilities</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10"
+                  height="10" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                  <path
+                    d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                </svg></span>
             </div>
-        </div>
-    </header>
-    <section class="section_1  align-items-center">
-        <div class="video_wrapper">
-          <video class="blue" poster="/assets/images/video-poster.jpeg"autoplay muted loop playsinline preload="metadata">
-              <source src="/assets/images/gate-video.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="container px-0">
-            <div class="sec_1_content_wrapper">
-                <h1 class="text-upper">Industries</h1>
-            </div>
-        </div>
-    </section>
+            <div class="menu__wrapper">
+              <ul class="menu__submenu">
+                <li class="menu__subitem">
+                  <a href="/procurement/">
+                    <div class="menu__subitem-title">Logistics and transport</div>
+                    <div class="menu__text">
+                      <p>We deliver any goods anywhere in the world. Thanks to our regional.</p>
+                    </div>
+                  </a>
+                </li>
 
-    <section class="section2 liner_b">
-      <div class="container px-0 liner">
-        <div class="content_wrapper">
+                <li class="menu__subitem">
+                  <a href="/procurement/">
+                    <div class="menu__subitem-title">Purchase</div>
+                    <div class="menu__text">
+                      <p>We buy industrial equipment. From Escalators to crypto mining hardware</p>
+                    </div>
+                  </a>
+                </li>
 
-          <div class="row">
-            <div class="col-lg-6">
-              <h1 class="ms-3">Awesome services from industrial company</h1>
+                <li class="menu__subitem">
+                  <a href="/procurement/">
+                    <div class="menu__subitem-title">Equipment and materials</div>
+                    <div class="menu__text">
+                      <p>Modern and ecological materials based on innovative technologies</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="col-lg-6">
-              <p>We specialize in engineering and manufacturing industrial metal parts across a variety of industries.
-              </p>
-              <!-- <p>Allan wrasse climbing gourami amur pike Arctic char. steelhead sprat sea lamprey grunion. Walleye poolfish sand goby butterfly ray stream catfish.              </p> 
+          </li>
+          <li class="menu_itself">
+            <div class="inner_wrapper">
+              <a href="">Engineering</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10"
+                  height="10" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                  <path
+                    d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                </svg></span>
+            </div>
+            <div class="menu__wrapper menu__wrapper--center" style="left:0;">
+              <ul class="menu__submenu">
+                <li class="menu__subitem">
+                  <a href="construction.php">
+                    <div class="menu__subitem-title">Electrical installation</div>
+                    <div class="menu__text">
+                      <p>Modernization of premiums to modern technological standards in power grids</p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="menu__subitem">
+                  <a href="/construction/">
+                    <div class="menu__subitem-title">Construction</div>
+                    <div class="menu__text">
+                      <p>Modern building technology and experience contributes to fast </p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="menu__subitem">
+                  <a href="/construction/">
+                    <div class="menu__subitem-title">Green Energy</div>
+                    <div class="menu__text">
+                      <p>Care and conservation of natural resources is our main policy</p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="menu__subitem">
+                  <a href="/construction/">
+                    <div class="menu__subitem-title">Heat recovery</div>
+                    <div class="menu__text">
+                      <p>Innovative heat recovery system with the help of heat removal</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu_itself">
+            <div class="inner_wrapper">
+              <a href="">Manufacturing</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="10"
+                  height="10" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                  <path
+                    d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                </svg></span>
+            </div>
+            <div class="menu__wrapper" style="left:0;">
+              <ul class="menu__submenu">
+                <li class="menu__subitem">
+                  <a href="/marker/">
+                    <div class="menu__subitem-title">Energy</div>
+                    <div class="menu__text">
+                      <p>Extensive experience in construction and real-time monitoring</p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="menu__subitem">
+                  <a href="/marker/">
+                    <div class="menu__subitem-title">Infrastructure</div>
+                    <div class="menu__text">
+                      <p>Creation of efficiency and eco-friendly urban and industrial</p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="menu__subitem">
+                  <a href="/marker/">
+                    <div class="menu__subitem-title">Electricity</div>
+                    <div class="menu__text">
+                      <p>We focus on the most efficient methods of consumption</p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="menu__subitem">
+                  <a href="/marker/">
+                    <div class="menu__subitem-title">Big data analytics</div>
+                    <div class="menu__text">
+                      <p>Own software and experienced specialists for data </p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="menu__subitem">
+                  <a href="/marker/">
+                    <div class="menu__subitem-title">Logistics</div>
+                    <div class="menu__text">
+                      <p>Experience in creating logistics hubs and delivering anywhere in the world</p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="menu__subitem">
+                  <a href="/marker/">
+                    <div class="menu__subitem-title">Trends in data analytics</div>
+                    <div class="menu__text">
+                      <p>Investments in promising technology industries that help us </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="section_1  align-items-center">
+    <div class="video_wrapper">
+      <video class="blue" poster="/assets/images/video-poster.jpeg" autoplay muted loop playsinline preload="metadata">
+        <source src="/assets/images/gate-video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="container px-0">
+      <div class="sec_1_content_wrapper">
+        <h1 class="text-upper">Industries</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="section2 liner_b">
+    <div class="container px-0 liner">
+      <div class="content_wrapper">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="ms-3">Mechanical Design and Drafting:</h1>
+          </div>
+          <div class="col-lg-6">
+            <p>At GATE CORP, we specialize in translating your ideas into precise mechanical designs. Our team of
+              skilled engineers is dedicated to delivering high-quality mechanical design and drafting services tailored
+              to your needs. We have a proven track record of providing top-notch mechanical design and drafting
+              solutions. Our experts combine their extensive experience with cutting-edge technology to bring your
+              concepts to reality. Our team can help you to fulfill any kind of design requirements.
+            </p>
+            <!-- <p>Allan wrasse climbing gourami amur pike Arctic char. steelhead sprat sea lamprey grunion. Walleye poolfish sand goby butterfly ray stream catfish.              </p> 
               <p>Spanish mackerel yellow weaver sixgill Sandperch flyingfish yellowfin cutthroat trout
 
                 grouper whitebait horsefish bullhead shark California smoothtongue, striped burrfish
                 
                 threadtail saber-toothed blenny Red</p>-->
-            </div>
           </div>
+        </div>
 
-          <div class="cards">  
-            <div class="row mx-0">
-              <div class="col-lg-3" style="padding-left: 0;">
-                  <div class="card_wrapper">
-                      <div class="absolute_numbering">
-                          <h2>01</h2>
-                      </div>
-                      <div class="bg_image">
-                          <img src="/assets/images/solar.jpg" alt="" srcset="">
-                          <div class="for_display_overflow">
-                              <div class="icon_overlay">
-                                  <img src="/assets/images/icons/solar.svg" alt="" srcset="">
-                              </div>
-                          </div>
-                          <div class="strip_overlay">
-                              <div class="strip-wrapper">
-                                  <h4>Solar</h4>
-                                  <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                                  <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                                  </svg></span>
-                              </div>
-                              <div class="hidden_block">
-                                  <p>We work with leading racking, mounting and tracking companies to design, prototype, test and deliver world class products across residential and utility markets.</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-3">
-                  <div class="card_wrapper">
-                      <div class="absolute_numbering">
-                          <h2>02</h2>
-                      </div>
-                      <div class="bg_image">
-                          <img src="/assets/images/aero-engine.jpg" alt="" srcset="">
-                          <div class="for_display_overflow">
-                              <div class="icon_overlay">
-                                  <img src="/assets/images/icons/aerospace.svg" alt="" srcset="">
-                              </div>
-                          </div>
-                          <div class="strip_overlay">
-                              <div class="strip-wrapper">
-                                  <h4>Architecture</h4>
-                                  <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                                  <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                                  </svg></span>
-                              </div>
-                              <div class="hidden_block">
-                                  <p>Gate is a strategic partner to design aircraft parts, casings and many critical components.</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-3">
-                  <div class="card_wrapper">
-                      <div class="absolute_numbering">
-                          <h2>03</h2>
-                      </div>
-                      <div class="bg_image">
-                          <img src="/assets/images/heavy.jpg" alt="" srcset="">
-                          <div class="for_display_overflow">
-                              <div class="icon_overlay">
-                                  <img src="/assets/images/icons/industrial.svg" alt="" srcset="">
-                              </div>
-                          </div>
-                          <div class="strip_overlay">
-                              <div class="strip-wrapper">
-                                  <h4>Defence</h4>
-                                  <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                                  <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                                  </svg></span>
-                              </div>
-                              <div class="hidden_block">
-                                  <p>We help design, engineer and manufacture parts and components across heavy industrial equipment from accessories, hydraulic lift mechanisms, material handling systems etc.</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-3" style="padding-right: 0;">
-                  <div class="card_wrapper">
-                      <div class="absolute_numbering">
-                          <h2>04</h2>
-                      </div>
-                      <div class="bg_image">
-                          <img src="/assets/images/automotive.jpg" alt="" srcset="">
-                          <div class="for_display_overflow">
-                              <div class="icon_overlay">
-                                  <img src="/assets/images/icons/automotive.svg" alt="" srcset="">
-                              </div>
-                          </div>
-                          <div class="strip_overlay">
-                              <div class="strip-wrapper">
-                                  <h4>Automotive</h4>
-                                  <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                                  <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                                  </svg></span>
-                              </div>
-                              <div class="hidden_block">
-                                  <p>Gate works with leading Automotive part suppliers and OEM’s in engineering new parts and scaling their manufacturing capabilities.</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="faq">
-            <div class="row me-0 pe-0">
-              <div class="col-lg-4">
-                <div class="img_wrapper ps-4">
-                  <img src="/assets/images/arrow-vector.svg" alt="">
+        <div class="cards">
+          <div class="row mx-0">
+            <div class="col-lg-3" style="padding-left: 0;">
+              <div class="card_wrapper">
+                <div class="absolute_numbering">
+                  <h2>01</h2>
                 </div>
-              </div>
-              <div class="col-lg-1"></div>
-              <div class="col-lg-7 pe-0">
-                <h2 class="heading">Architecture</h2>
-                <div class="acc_wrapper">
-                  <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                          Gate manufactures <div class="acc_btn"></div>
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                          <p>Gate manufactures Aluminium and Stainless Steel requirements typically used by architects during building design.</p> 
-                        </div>
-                      </div>
+                <div class="bg_image">
+                  <img src="/assets/images/solar.jpg" alt="" srcset="">
+                  <div class="for_display_overflow">
+                    <div class="icon_overlay">
+                      <img src="/assets/images/icons/solar.svg" alt="" srcset="">
                     </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                          Offering  <div class="acc_btn"></div>
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                          <p>We work closely with architects and help them realize a concept to reality. Architects leverage on our strong engineering and metals manufacturing/sourcing expertise when the engagement starts.</p>  
-                        </div>
-                      </div>
+                  </div>
+                  <div class="strip_overlay">
+                    <div class="strip-wrapper">
+                      <h4>Conceptual Design</h4>
+                      <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                          fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                        </svg></span>
                     </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                          Architectural industry  <div class="acc_btn"></div>
-                        </button>
-                      </h2>
-                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                          <p>Our architectural industry metal fabrication capabilities include 2D Laser Cutting that offers the accuracy and speed necessary for performing repetitive jobs.</p>
-                        </div>
-                      </div>
+                    <div class="hidden_block">
+                      <p>We work with leading racking, mounting and tracking companies to design, prototype, test and
+                        deliver world class products across residential and utility markets.</p>
                     </div>
                   </div>
                 </div>
-                <button type="button" class="explore_btn hover mx-auto d-block mx-lg-0 mt-3 mt-lg-5 text-uppercase">Explore More</button>
               </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card_wrapper">
+                <div class="absolute_numbering">
+                  <h2>02</h2>
+                </div>
+                <div class="bg_image">
+                  <img src="/assets/images/aero-engine.jpg" alt="" srcset="">
+                  <div class="for_display_overflow">
+                    <div class="icon_overlay">
+                      <img src="/assets/images/icons/aerospace.svg" alt="" srcset="">
+                    </div>
+                  </div>
+                  <div class="strip_overlay">
+                    <div class="strip-wrapper">
+                      <h4>3D Modeling </h4>
+                      <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                          fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                        </svg></span>
+                    </div>
+                    <div class="hidden_block">
+                      <p>Gate is a strategic partner to design aircraft parts, casings and many critical components.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card_wrapper">
+                <div class="absolute_numbering">
+                  <h2>03</h2>
+                </div>
+                <div class="bg_image">
+                  <img src="/assets/images/heavy.jpg" alt="" srcset="">
+                  <div class="for_display_overflow">
+                    <div class="icon_overlay">
+                      <img src="/assets/images/icons/industrial.svg" alt="" srcset="">
+                    </div>
+                  </div>
+                  <div class="strip_overlay">
+                    <div class="strip-wrapper">
+                      <h4>Detail Engineering </h4>
+                      <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                          fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                        </svg></span>
+                    </div>
+                    <div class="hidden_block">
+                      <p>We help design, engineer and manufacture parts and components across heavy industrial equipment
+                        from accessories, hydraulic lift mechanisms, material handling systems etc.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3" style="padding-right: 0;">
+              <div class="card_wrapper">
+                <div class="absolute_numbering">
+                  <h2>04</h2>
+                </div>
+                <div class="bg_image">
+                  <img src="/assets/images/automotive.jpg" alt="" srcset="">
+                  <div class="for_display_overflow">
+                    <div class="icon_overlay">
+                      <img src="/assets/images/icons/automotive.svg" alt="" srcset="">
+                    </div>
+                  </div>
+                  <div class="strip_overlay">
+                    <div class="strip-wrapper">
+                      <h4>Prototyping</h4>
+                      <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                          fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                        </svg></span>
+                    </div>
+                    <div class="hidden_block">
+                      <p>Gate works with leading Automotive part suppliers and OEM’s in engineering new parts and
+                        scaling their manufacturing capabilities.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards mt-0 pt-0 d-none">
+          <div class="row mx-0">
+            <div class="col-lg-3" style="padding-left: 0;">
+              <div class="card_wrapper">
+                <div class="absolute_numbering">
+                  <h2>05</h2>
+                </div>
+                <div class="bg_image">
+                  <img src="/assets/images/solar.jpg" alt="" srcset="">
+                  <div class="for_display_overflow">
+                    <div class="icon_overlay">
+                      <img src="/assets/images/icons/solar.svg" alt="" srcset="">
+                    </div>
+                  </div>
+                  <div class="strip_overlay">
+                    <div class="strip-wrapper">
+                      <h4>FEA / CFD Analysis </h4>
+                      <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                          fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                        </svg></span>
+                    </div>
+                    <div class="hidden_block">
+                      <p>We work with leading racking, mounting and tracking companies to design, prototype, test and
+                        deliver world class products across residential and utility markets.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card_wrapper">
+                <div class="absolute_numbering">
+                  <h2>06</h2>
+                </div>
+                <div class="bg_image">
+                  <img src="/assets/images/aero-engine.jpg" alt="" srcset="">
+                  <div class="for_display_overflow">
+                    <div class="icon_overlay">
+                      <img src="/assets/images/icons/aerospace.svg" alt="" srcset="">
+                    </div>
+                  </div>
+                  <div class="strip_overlay">
+                    <div class="strip-wrapper">
+                      <h4>Design Optimization </h4>
+                      <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                          fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                        </svg></span>
+                    </div>
+                    <div class="hidden_block">
+                      <p>Gate is a strategic partner to design aircraft parts, casings and many critical components.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card_wrapper">
+                <div class="absolute_numbering">
+                  <h2>07</h2>
+                </div>
+                <div class="bg_image">
+                  <img src="/assets/images/heavy.jpg" alt="" srcset="">
+                  <div class="for_display_overflow">
+                    <div class="icon_overlay">
+                      <img src="/assets/images/icons/industrial.svg" alt="" srcset="">
+                    </div>
+                  </div>
+                  <div class="strip_overlay">
+                    <div class="strip-wrapper">
+                      <h4>Design for Manufacturing </h4>
+                      <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                          fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                        </svg></span>
+                    </div>
+                    <div class="hidden_block">
+                      <p>We help design, engineer and manufacture parts and components across heavy industrial equipment
+                        from accessories, hydraulic lift mechanisms, material handling systems etc.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3" style="padding-right: 0;">
+              <div class="card_wrapper">
+                <div class="absolute_numbering">
+                  <h2>08</h2>
+                </div>
+                <div class="bg_image">
+                  <img src="/assets/images/automotive.jpg" alt="" srcset="">
+                  <div class="for_display_overflow">
+                    <div class="icon_overlay">
+                      <img src="/assets/images/icons/automotive.svg" alt="" srcset="">
+                    </div>
+                  </div>
+                  <div class="strip_overlay">
+                    <div class="strip-wrapper">
+                      <h4>Design for Assembly
+                      </h4>
+                      <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                          fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                        </svg></span>
+                    </div>
+                    <div class="hidden_block">
+                      <p>Gate works with leading Automotive part suppliers and OEM’s in engineering new parts and
+                        scaling their manufacturing capabilities.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards mt-0 pt-0 d-none">
+          <div class="row mx-0">
+            <div class="col-lg-3" style="padding-left: 0;">
+              <div class="card_wrapper">
+                <div class="absolute_numbering">
+                  <h2>09</h2>
+                </div>
+                <div class="bg_image">
+                  <img src="/assets/images/solar.jpg" alt="" srcset="">
+                  <div class="for_display_overflow">
+                    <div class="icon_overlay">
+                      <img src="/assets/images/icons/solar.svg" alt="" srcset="">
+                    </div>
+                  </div>
+                  <div class="strip_overlay">
+                    <div class="strip-wrapper">
+                      <h4>Reverse Engineering </h4>
+                      <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                          fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                        </svg></span>
+                    </div>
+                    <div class="hidden_block">
+                      <p>We work with leading racking, mounting and tracking companies to design, prototype, test and
+                        deliver world class products across residential and utility markets.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card_wrapper">
+                <div class="absolute_numbering">
+                  <h2>10</h2>
+                </div>
+                <div class="bg_image">
+                  <img src="/assets/images/aero-engine.jpg" alt="" srcset="">
+                  <div class="for_display_overflow">
+                    <div class="icon_overlay">
+                      <img src="/assets/images/icons/aerospace.svg" alt="" srcset="">
+                    </div>
+                  </div>
+                  <div class="strip_overlay">
+                    <div class="strip-wrapper">
+                      <h4>Value Engineering </h4>
+                      <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                          fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                        </svg></span>
+                    </div>
+                    <div class="hidden_block">
+                      <p>Gate is a strategic partner to design aircraft parts, casings and many critical components.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="button"
+          class="explore_btn explore_cards hover mx-auto d-block mt-3 text-uppercase">Explore More</button>
+
+        <div class="faq">
+          <div class="row me-0 pe-0">
+            <div class="col-lg-4">
+              <div class="img_wrapper ps-4">
+                <img src="/assets/images/arrow-vector.svg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-7 pe-0">
+              <h2 class="heading">Product Design and Development</h2>
+              <p>Product design and development are the transformative process through which a mere idea takes shape as
+                a tangible product, fulfilling the precise expectations of our clients. Our approach revolves around
+                crafting products that not only cater to specific needs but also enhance the overall user experience.
+                Every product we design adheres rigorously to elevated standards and international guidelines.</p>
+              <p>Our dedicated product design team offers a comprehensive range of development services, catering to the
+                unique needs of individuals and clients across various sectors.</p>
+              <div class="acc_wrapper">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Our product design and development services include. <div class="acc_btn"></div>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <ul>
+                          <li>Industrial product design</li>
+                          <li>Creative packaging design</li>
+                          <li>Product development</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        We provide a comprehensive range of services <div class="acc_btn"></div>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <p>Starting from the initial concept design and development to prototyping, and 3D modeling to
+                          manufacturing." At Gate Corporation, we immerse ourselves in innovative product design,
+                          blending artistic vision with acute market insights. </p>
+                        <ul>
+                          <li>Idea Generation</li>
+                          <li>Evaluation</li>
+                          <li>Design & Features</li>
+                          <li>Business Metrics</li>
+                          <li>Prototyping & Testing</li>
+                          <li>Launch & Feedback</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item d-none">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Our primary objective is to transform your innovative ideas into tangible, real-world products
+                        through our comprehensive product development services. <div class="acc_btn"></div>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <p>We understand that your vision is the driving force behind every project, and our commitment
+                          is to turn that vision into reality. At Gate Corp, we are dedicated to guiding you through
+                          every step of the product development journey, from conceptualization to market launch,
+                          ensuring your ideas materialize successfully.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button"
+                class="explore_btn faq_more hover mx-auto d-block mx-lg-0 mt-3 mt-lg-5 text-uppercase">Explore More</button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    
-    <section class="services">
-      <div class="container liner_lr">
-        <h1>Solar</h1>
-        <div class="grid">
-          <div class="card_content">
-            <div class="img_wrapper">
-              <img src="/assets/images/aero-engine.jpg" alt="">
-            </div>
-            <h4 class="my-2 my-lg-4">Ongrid SOLAR            </h4>
-          </div>
+    </div>
+  </section>
 
-          <div class="card_content">
-            <div class="img_wrapper">
-              <img src="/assets/images/aero-engine.jpg" alt="">
-            </div>
-            <h4 class="my-2 my-lg-4">Residential SOLAR            </h4>
-          </div>
-
-          <div class="card_content">
-            <div class="img_wrapper">
-              <img src="/assets/images/aero-engine.jpg" alt="">
-            </div>
-            <h4 class="my-2 my-lg-4">Off Grid SOLAR            </h4>
-          </div>
-
-          <!-- <div class="card_content">
-            <div class="img_wrapper">
-              <img src="/assets/images/aero-engine.jpg" alt="">
-            </div>
-            <h4 class="my-2 my-lg-4">Ecological production</h4>
-          </div>
-
-          <div class="card_content">
-            <div class="img_wrapper">
-              <img src="/assets/images/aero-engine.jpg" alt="">
-            </div>
-            <h4 class="my-2 my-lg-4">Ecological production</h4>
-          </div>
-
-          <div class="card_content">
-            <div class="img_wrapper">
-              <img src="/assets/images/aero-engine.jpg" alt="">
-            </div>
-            <h4 class="my-2 my-lg-4">Ecological production</h4>
-          </div>
-           -->
-        </div>
-        <!-- <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-6 col-lg-4 mt-5 pt-5">
-              <div class="card_content">
-                <div class="img_wrapper">
-                  <img src="/assets/images/aero-engine.jpg" alt="">
-                </div>
-                <h4 class="my-2 my-lg-4">Ecological production</h4>
-
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mt-5 pt-5">
-              <div class="card_content">
-                <div class="img_wrapper">
-                  <img src="/assets/images/aero-engine.jpg" alt="">
-                </div>
-                <h4 class="my-2 my-lg-4">Ecological production</h4>
-                
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mt-5 pt-5">
-              <div class="card_content">
-                <div class="img_wrapper">
-                  <img src="/assets/images/aero-engine.jpg" alt="">
-                </div>
-                <h4 class="my-2 my-lg-4">Ecological production</h4>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-6 col-lg-4 mt-5 pt-5">
-              <div class="card_content">
-                <div class="img_wrapper">
-                  <img src="/assets/images/aero-engine.jpg" alt="">
-                </div>
-                <h4 class="my-2 my-lg-4">Ecological production</h4>
-
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mt-5 pt-5">
-              <div class="card_content">
-                <div class="img_wrapper">
-                  <img src="/assets/images/aero-engine.jpg" alt="">
-                </div>
-                <h4 class="my-2 my-lg-4">Ecological production</h4>
-                
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mt-5 pt-5">
-              <div class="card_content">
-                <div class="img_wrapper">
-                  <img src="/assets/images/aero-engine.jpg" alt="">
-                </div>
-                <h4 class="my-2 my-lg-4">Ecological production</h4>
-              </div>
-            </div>
-          </div>
-          
-        </div> -->
-        
-        <button class="gray_btn d-block mx-auto mt-5 text-uppercase hover">More Services</button>
-
+  <section class="work">
+    <div class="container px-0">
+      <div class="mb-5">
+        <h1>Prototyping and Testing </h1>
+        <p>In the life cycle of product development, turning ideas into reality is a complex yet exhilarating journey.
+          At Gate Corp, we are specialized in two crucial phases of this journey: Prototyping and Testing. These phases
+          are where concept takes shape, designs are refined, and innovations are born. </p>
       </div>
-      
-    </section>
-
-    <section class="work">
-      <div class="container px-0">
-        <h1 class="mb-5">Key Features</h1>
+      <div class="first">
+        <h5>Our Prototyping Expertise </h5>
+        <p>Prototyping is the bridge between imagination and creation. It's a phase where ideas become tangible,
+          allowing for a deeper understanding of a product's functionality and design. At Gate Corp, we excel in the art
+          of prototyping. Our skilled team transforms design concepts into physical prototypes, providing a hands-on
+          experience before moving for production. The gate engineering team possesses the ability to undertake various
+          types of prototyping, including: </p>
         <div class="row mx-0">
           <div class="col-md-6 col-lg-4 col-xl-3 mt-5 px-0 card ms-auto">
             <div class="content_wrapper w-full h-full">
@@ -592,8 +722,21 @@
               </div>
               <p class="text-end step">01 Step</p>
               <div class="content my-5">
-                <h3>Experience</h3>
-                <p class="mt-3">More than a decade. Our engineers and Operators have more than 3 decades of experience.</p>
+                <h3>Sketches</h3>
+                <p class="mt-3">Initial design visuals for innovation.</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 mt-5 px-0 card ms-auto">
+            <div class="content_wrapper w-full h-full">
+              <div class="num_wrapper">
+                <h1 class="num">02</h1>
+              </div>
+              <p class="text-end step">02 Step</p>
+              <div class="content my-5">
+                <h3>Digital</h3>
+                <p class="mt-3">Using tools like Figma and Adobe XD.</p>
               </div>
 
             </div>
@@ -601,12 +744,12 @@
           <div class="col-md-6 col-lg-4 col-xl-3 mt-5 px-0 card">
             <div class="content_wrapper w-full h-full">
               <div class="num_wrapper">
-                <h1 class="num">02</h1>
+                <h1 class="num">03</h1>
               </div>
-              <p class="text-end step">02 Step</p>
+              <p class="text-end step">03 Step</p>
               <div class="content my-5">
-                <h3>Expertise</h3>
-                <p class="mt-3">Engineering, Manufacturing and Supply Chain Optimization</p>
+                <h3>Physical Models</h3>
+                <p class="mt-3">Authentic tangible mechanical prototypes.</p>
               </div>
 
             </div>
@@ -614,220 +757,677 @@
           <div class="col-md-6 col-lg-4 col-xl-3 mt-5 px-0 card me-auto">
             <div class="content_wrapper w-full h-full">
               <div class="num_wrapper">
-                <h1 class="num">03</h1>
+                <h1 class="num">04</h1>
               </div>
-              <p class="text-end step">03 Step</p>
+              <p class="text-end step">04 Step</p>
               <div class="content my-5">
-                <h3>Efficiency</h3>
-                <p class="mt-3">Shorter lead times, Low production costs and Faster product roll outs.                </p>
+                <h3>Interactive</h3>
+                <p class="mt-3">Shorter lead times, Low production costs and Faster product roll outs. </p>
               </div>
 
             </div>
           </div>
-          <!-- <div class="col-md-6 col-lg-4 col-xl-3 mt-5 px-0 card">
+        </div>
+
+        <div class="row mx-0 mt-5 d-none">
+          <div class="col-md-6 col-lg-4 col-xl-3 mt-5 px-0 card">
+            <div class="content_wrapper w-full h-full">
+              <div class="num_wrapper">
+                <h1 class="num">05</h1>
+              </div>
+              <p class="text-end step">05 Step</p>
+              <div class="content my-5">
+                <h3>Functional</h3>
+                <p class="mt-3">Mirroring the final mechanical product.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <button class="gray_btn d-block mx-auto more_work_1 mt-5 text-uppercase hover">Explore more</button>
+      </div>
+
+      <div class="second">
+        <h5>Our Testing Excellence </h5>
+        <p>Testing is the heart of product development. It's where we validate designs, assess performance, and ensure
+          products meet industry standards and customer expectations. At Gate Corp, we take testing seriously. Our
+          state-of-the-art facilities and seasoned experts conduct rigorous tests to ensure your product stands up to
+          real-world conditions. Our proficient engineers can conduct the following analyses: </p>
+        <div class="row mx-0">
+          <div class="col-md-6 col-lg-4 col-xl-3 mt-5 px-0 card ms-auto">
+            <div class="content_wrapper w-full h-full">
+              <div class="num_wrapper">
+                <h1 class="num">01</h1>
+              </div>
+              <p class="text-end step">01 Step</p>
+              <div class="content my-5">
+                <h3>FEM (Finite Element Method)</h3>
+                <p class="mt-3"> For structural integrity and real-world force simulations.</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 mt-5 px-0 card ms-auto">
+            <div class="content_wrapper w-full h-full">
+              <div class="num_wrapper">
+                <h1 class="num">02</h1>
+              </div>
+              <p class="text-end step">02 Step</p>
+              <div class="content my-5">
+                <h3>CFD (Computational Fluid Dynamics)</h3>
+                <p class="mt-3">Solving fluid flow problems for performance.</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 mt-5 px-0 card">
+            <div class="content_wrapper w-full h-full">
+              <div class="num_wrapper">
+                <h1 class="num">03</h1>
+              </div>
+              <p class="text-end step">03 Step</p>
+              <div class="content my-5">
+                <h3>Material Analysis</h3>
+                <p class="mt-3">Ensuring material longevity and suitability.</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 mt-5 px-0 card me-auto">
             <div class="content_wrapper w-full h-full">
               <div class="num_wrapper">
                 <h1 class="num">04</h1>
               </div>
               <p class="text-end step">04 Step</p>
               <div class="content my-5">
-                <h3>Creation of a project with a team team on time</h3>
-                <p class="mt-3">Arctic char, steelhead sprat sea lamprey grunion. Walleye poolfish sand goby butterfly ray stream catfish</p>
+                <h3>Vibration & Fatigue Testing</h3>
+                <p class="mt-3">Assessing resilience against wear and tear.</p>
               </div>
 
             </div>
-          </div> -->
+          </div>
         </div>
-        
+
+        <div class="row mx-0 mt-5 d-none">
+          <div class="col-md-6 col-lg-4 col-xl-3 mt-5 px-0 card">
+            <div class="content_wrapper w-full h-full">
+              <div class="num_wrapper">
+                <h1 class="num">05</h1>
+              </div>
+              <p class="text-end step">05 Step</p>
+              <div class="content my-5">
+                <h3>Thermal Analysis</h3>
+                <p class="mt-3">Evaluating temperature impact on performance.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <button class="gray_btn d-block mx-auto more_work_2 mt-5 text-uppercase hover">Explore more</button>
       </div>
-    </section>
 
-    <section class="features">
-      <div class="container px-0">
-        <div class="row mx-0  p_bl">
-          <div class="col-lg-4 p-0">
-            <div class="img_wrapper">
-              <img src="/assets/images/aero-engine.jpg" alt="">
-            </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container liner_lr">
+      <h1>Manufacturing Support </h1>
+      <p>In today's dynamic manufacturing landscape, optimizing production processes and ensuring efficiency is
+        paramount. At Gate Corp, we understand the intricate challenges that manufacturers face, and we are here to
+        provide comprehensive Manufacturing Support services that propel your operations to new heights. Our
+        Manufacturing Support services are designed to address your specific needs at every stage of the production
+        cycle. From concept to delivery, we offer a range of solutions that enhance productivity, quality, and overall
+        operational excellence. We always extend our services to our clients for: </p>
+      <div class="grid">
+        <div class="card_content">
+          <div class="img_wrapper">
+            <img src="/assets/images/aero-engine.jpg" alt="">
           </div>
-          <div class="col-lg-6 ms-auto px-1 px-lg-0">
-            <h1 class="m-0 heading">Automotive</h1>
-            <!--<h4 class="my-4 heading">Gate manufacturers the highest quality components for the automotive industry.            </h4>
-            <p>Our in-house engineering team can assist in developing a fully functional prototype to the fabrication of large numbers.             </p>
-            <p>We offer contract manufacturing for Aluminium, carbon steel, stainless steel, cold roll steel and stainless steel parts and components for battery housings, valves,  transmission covers, seat parts, brake components etc.            </p>
-             <p>Allan wrasse climbing gourami amur pike Arctic char, steelhead sprat sea lamprey grunion Walleye poolfish sand goby butterfly ray stream catfish jewfish.</p> 
-            <p>Spanish mackerel yellow weaver sixgill. Sandperch flyingfish yellowfin cutthroat trout grouper whitebait horsefish bullhead shark California smoothtongue, striped burrfish threadtail sa- ber-toothed blenny Red</p> -->
-            <div class="checks">
-              <div class="check">
-                <div class="left_wrapper">
-                  <div class="icon_wrapper">
-                    <img src="/assets/images/icons/check.svg" alt="">
-                  </div>
-                </div>
-                <p>Gate manufacturers the highest quality components for the automotive industry.                </p>
-              </div>
-              <div class="check">
-                <div class="left_wrapper">
-                  <div class="icon_wrapper">
-                    <img src="/assets/images/icons/check.svg" alt="">
-                  </div>
-                </div>
-                <p>Our in-house engineering team can assist in developing a fully functional prototype to the fabrication of large numbers.                 </p>
-              </div>
-              <div class="check">
-                <div class="left_wrapper">
-                  <div class="icon_wrapper">
-                    <img src="/assets/images/icons/check.svg" alt="">
-                  </div>
-                </div>
-                <p>Our in-house engineering team can assist in developing a fully functional prototype to the fabrication of large numbers.                 </p>
-              </div>
-              <div class="check">
-                <div class="left_wrapper">
-                  <div class="icon_wrapper">
-                    <img src="/assets/images/icons/check.svg" alt="">
-                  </div>
-                </div>
-                <p>Metal fabrication can also create the components of a vehicle’s sound system such as the subwoofer chassis and speakers.                </p>
-              </div>
-            </div>
-            <button class="explore_btn" type="button">Explore More</button>
+          <h4 class="my-2 my-lg-4">Design for Manufacturing (DFM) </h4>
+        </div>
+
+        <div class="card_content">
+          <div class="img_wrapper">
+            <img src="/assets/images/aero-engine.jpg" alt="">
+          </div>
+          <h4 class="my-2 my-lg-4">Process Optimization </h4>
+        </div>
+
+        <div class="card_content">
+          <div class="img_wrapper">
+            <img src="/assets/images/aero-engine.jpg" alt="">
+          </div>
+          <h4 class="my-2 my-lg-4">Quality Assurance and Testing </h4>
+        </div>
+
+        <div class="card_content d-none">
+          <div class="img_wrapper">
+            <img src="/assets/images/aero-engine.jpg" alt="">
+          </div>
+          <h4 class="my-2 my-lg-4">Supply Chain Management</h4>
+        </div>
+
+        <div class="card_content d-none">
+          <div class="img_wrapper">
+            <img src="/assets/images/aero-engine.jpg" alt="">
+          </div>
+          <h4 class="my-2 my-lg-4">Equipment Maintenance and Reliability</h4>
+        </div>
+
+      </div>
+      <button class="gray_btn d-block mx-auto more mt-5 text-uppercase hover">explore More</button>
+
+    </div>
+
+  </section>
+
+  <section class="features copy">
+    <div class="container px-0">
+      <div class="row mx-0  p_bl">
+        <div class="col-lg-4 p-0">
+          <div class="img_wrapper">
+            <img src="/assets/images/aero-engine.jpg" alt="">
           </div>
         </div>
-      
-        <div class="partners">
-          <h1 class="heading ms-3">Partners</h1>
-          <h4 class="ms-3 heading">Partners who trust Industrium co</h4>
+        <div class="col-lg-6 ms-auto px-1 px-lg-0">
+          <h1 class="m-0 heading">CAD/CAM Services</h1>
+          <p>In the rapidly evolving landscape of engineering and manufacturing, precision and efficiency are paramount. We specialize in Computer-Aided Design (CAD) and Computer-Aided Manufacturing (CAM) services that empower your projects with precision, speed, and innovation.</p>
+          <h5 class="my-2">Our CAD Design Expertise:          </h5>
+          <div class="checks">
+            <div class="check">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>2D and 3D modeling. </p>
+            </div>
+            <div class="check">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>Conceptual design</p>
+            </div>
+            <div class="check d-none">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>Detailed engineering drawings</p>
+            </div>
+            <div class="check d-none">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>Parametric modeling</p>
+            </div>
+            <div class="check d-none">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>Assemblies and simulations</p>
+            </div>
+            <div class="check d-none">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>Reverse engineering</p>
+            </div>
+          </div>
 
-          <div class="hstack">
-            <div class="img_wrapper">
-              <img src="/assets/images/Agrimax-logo.png" alt="">
+          <h5 class="my-2">Excellence in Simulation and Analysis:          </h5>
+          <div class="checks">
+            <div class="check">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>Finite Element Analysis (FEA)</p>
             </div>
-            <div class="img_wrapper">
-              <img src="/assets/images/Agrimax-logo.png" alt="">
+            <div class="check">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>Structural analysis              </p>
             </div>
-            <div class="img_wrapper">
-              <img src="/assets/images/Agrimax-logo.png" alt="">
+            <div class="check d-none">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>Thermal analysis              </p>
             </div>
-            <div class="img_wrapper">
-              <img src="/assets/images/Agrimax-logo.png" alt="">
+            <div class="check d-none">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>Fluid dynamics analysis</p>
             </div>
-            <div class="img_wrapper">
-              <img src="/assets/images/Agrimax-logo.png" alt="">
+            <div class="check d-none">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>Stress testing              </p>
             </div>
-            
+            <div class="check d-none">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>Performance optimization              </p>
+            </div>
+          </div>
+
+          <h5 class="my-2">Our CAM Precision:          </h5>
+          <div class="checks">
+            <div class="check">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>Navigate intricate manufacturing processes with guided tool paths.              </p>
+            </div>
+            <div class="check">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>Realize designs with unmatched accuracy through CNC machining.              </p>
+            </div>
+            <div class="check d-none">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>Leap into the future with advanced robotics and cutting-edge 3D printing techniques.</p>
+            </div>
+          </div>
+
+          <button class="explore_btn features_copy_btn" type="button">Explore More</button>
+        </div>
+      </div>
+
+      <!-- <div class="partners">
+        <h1 class="heading ms-3">Partners</h1>
+        <h4 class="ms-3 heading">Partners who trust Industrium co</h4>
+
+        <div class="hstack">
+          <div class="img_wrapper">
+            <img src="/assets/images/Agrimax-logo.png" alt="">
+          </div>
+          <div class="img_wrapper">
+            <img src="/assets/images/Agrimax-logo.png" alt="">
+          </div>
+          <div class="img_wrapper">
+            <img src="/assets/images/Agrimax-logo.png" alt="">
+          </div>
+          <div class="img_wrapper">
+            <img src="/assets/images/Agrimax-logo.png" alt="">
+          </div>
+          <div class="img_wrapper">
+            <img src="/assets/images/Agrimax-logo.png" alt="">
+          </div>
+
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <section class="section2 copy">
+    <div class="container liner px-0">
+      <div class="content_wrapper">
+        <div class="faq">
+          <div class="row me-0 pe-0">
+            <div class="col-lg-4">
+              <div class="img_wrapper ps-4">
+                <img src="/assets/images/arrow-vector.svg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-7 pe-0">
+              <h2 class="heading">Simulation & Analysis </h2>
+              <p>When you partner with Gate Corp for Simulation & Analysis, you're choosing a partner dedicated to
+                optimizing your engineering projects. We provide the insight and guidance needed to ensure that your
+                designs and systems perform flawlessly. </p>
+              <p>At Gate Corp, we push boundaries in mechanical engineering with state-of-the-art simulation and
+                analysis, ensuring every design is primed for real-world challenges. </p>
+              <h5 style="color: #000;">Our Expertise:</h5>
+              <div class="acc_wrapper">
+                <div class="accordion accordion-flush" id="accordionFlushExample2">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                        Finite Element Analysis (FEA)<div class="acc_btn"></div>
+                      </button>
+                    </h2>
+                    <div id="flush-collapse1" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample2">
+                      <div class="accordion-body">
+                        <p>Predict and address design weaknesses efficiently.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                        Structural Analysis <div class="acc_btn"></div>
+                      </button>
+                    </h2>
+                    <div id="flush-collapse2" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample2">
+                      <div class="accordion-body">
+                        <p>Gauge the resilience of components under varied conditions.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                        Thermal Analysis<div class="acc_btn"></div>
+                      </button>
+                    </h2>
+                    <div id="flush-collapse3" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample2">
+                      <div class="accordion-body">
+                        <p>Optimize designs for consistent performance, regardless of temperature variances.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item d-none">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                        Fluid Dynamics Analysis<div class="acc_btn"></div>
+                      </button>
+                    </h2>
+                    <div id="flush-collapse4" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample2">
+                      <div class="accordion-body">
+                        <p>Fine-tune designs for optimal fluid interactions.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item d-none">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                        Stress Testing<div class="acc_btn"></div>
+                      </button>
+                    </h2>
+                    <div id="flush-collapse5" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample2">
+                      <div class="accordion-body">
+                        <p>Test designs against extreme scenarios, ensuring unparalleled robustness.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item d-none">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                        Performance Optimization<div class="acc_btn"></div>
+                      </button>
+                    </h2>
+                    <div id="flush-collapse6" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample2">
+                      <div class="accordion-body">
+                        <p>Refine and perfect for peak design efficiency.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button"
+                class="explore_btn accTwoBtn hover mx-auto d-block mx-lg-0 mt-3 mt-lg-5 text-uppercase">Explore
+                More</button>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section_8 blue">
-      <div class="sec_8_content_wrapper">
-          <div class="container" style="position: relative;z-index: 3;">
-              <img class="map" src="/assets/images/bg-map.svg" alt="">
+  <section class="features">
+    <div class="container px-0">
+      <div class="row mx-0  p_bl">
+        <div class="col-lg-4 p-0">
+          <div class="img_wrapper">
+            <img src="/assets/images/aero-engine.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 ms-auto px-1 px-lg-0">
+          <h1 class="m-0 heading">Industrial Automation </h1>
+          <p>At Gate Corp, we offer cutting-edge Industrial Automation services to revolutionize your manufacturing and
+            production processes. We understand the significance of efficiency, precision, and productivity in today's
+            industrial landscape. Our Industrial Automation solutions are designed to optimize operations, reduce costs,
+            and enhance overall competitiveness. </p>
+          <h5 class="my-4">Our Industrial Automation Service includes: </h5>
+          <div class="checks">
+            <div class="check">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>Custom Automation Solutions </p>
+            </div>
+            <div class="check">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>PLC Programming and Control Systems</p>
+            </div>
+            <div class="check">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>SCADA Integration</p>
+            </div>
+            <div class="check d-none">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>HMI Development</p>
+            </div>
+            <div class="check d-none">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>IoT Integration</p>
+            </div>
+            <div class="check d-none">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>Robotics and Cobots</p>
+            </div>
+            <div class="check d-none">
+              <div class="left_wrapper">
+                <div class="icon_wrapper">
+                  <img src="/assets/images/icons/check.svg" alt="">
+                </div>
+              </div>
+              <p>Maintenance and Support</p>
+            </div>
+          </div>
+
+          <button class="explore_btn more_checks" type="button">Explore More</button>
+        </div>
+      </div>
+
+      <!-- <div class="partners">
+        <h1 class="heading ms-3">Partners</h1>
+        <h4 class="ms-3 heading">Partners who trust Industrium co</h4>
+
+        <div class="hstack">
+          <div class="img_wrapper">
+            <img src="/assets/images/Agrimax-logo.png" alt="">
+          </div>
+          <div class="img_wrapper">
+            <img src="/assets/images/Agrimax-logo.png" alt="">
+          </div>
+          <div class="img_wrapper">
+            <img src="/assets/images/Agrimax-logo.png" alt="">
+          </div>
+          <div class="img_wrapper">
+            <img src="/assets/images/Agrimax-logo.png" alt="">
+          </div>
+          <div class="img_wrapper">
+            <img src="/assets/images/Agrimax-logo.png" alt="">
+          </div>
+
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <section class="section_8 blue">
+    <div class="sec_8_content_wrapper">
+      <div class="container" style="position: relative;z-index: 3;">
+        <img class="map" src="/assets/images/bg-map.svg" alt="">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="left">
+              <h4>The Right Choice</h4>
+              <p>Talk to an expert to address your engineering and manufacturing challenges.</p>
               <div class="row">
-                  <div class="col-lg-6">
-                      <div class="left">
-                          <h4>The Right Choice</h4>
-                          <p>Talk to an expert to address your engineering and manufacturing challenges.</p>
-                          <div class="row">
-                              <div class="col-lg-6">
-                                  <div class="addres_line_1">
-                                      <h6>Georgia</h6>
-                                      <p>5400 Laurel Springs Pkwy,  Ste 302 Suwanee, GA 30024</p>
-                                  </div>
-                              </div>
-                              <div class="col-lg-6">
-                                  <div class="addres_line_1">
-                                      <h6>Phone</h6>
-                                      <a href="tel:+1 (770) 783-1218">+1 (770) 783-1218</a>
-                                      <a href="tel:+1 (770) 783-1218">+1 (770) 783-1218</a>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col-lg-6">
-                                  <div class="addres_line_2">
-                                      <h6>Follow Us</h6>
-                                      <ul class="icon_wrapper">
-                                          <li><a href=""><img src="/assets/images/icons/twitter.svg" alt="" srcset=""></a></li>
-                                          <li><a href=""><img src="/assets/images/icons/linkedin.svg" alt="" srcset=""></a></li>
-                                          <li><a href=""><img src="/assets/images/icons/facebook.svg" alt="" srcset=""></a></li>
-                                          <li><a href=""><img src="/assets/images/icons/pinterest.svg" alt="" srcset=""></a></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                              <div class="col-lg-6">
-                                  <div class="addres_line_2">
-                                      <h6>Email</h6>
-                                      <a href="mailto:contact@gatecorpus.com">contact@gatecorpus.com</a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
+                <div class="col-lg-6">
+                  <div class="addres_line_1">
+                    <h6>Georgia</h6>
+                    <p>5400 Laurel Springs Pkwy, Ste 302 Suwanee, GA 30024</p>
                   </div>
-                  <div class="col-lg-6">
-                      <div class="right">
-                          <div class="form_wrapper">
-                              <h2>Call Us Or<br>
-                                  Fill The Form</h2>
-                              <form action="" method="post">
-                                  <input type="text" name="text" id="" placeholder="Full name">
-                                  <input type="email" name="email" id="" placeholder="Email">
-                                  <input type="number" name="number" id="" placeholder="Phone">
-                                  <input type="text" name="text" id="" placeholder="Subject">
-                                  <textarea name="" id="" cols="30" rows="3" placeholder="Description"></textarea>
-                                  <button type="submit" name="submit">SEND A MESSAGE</button>
-                              </form>
-                          </div>
-                      </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="addres_line_1">
+                    <h6>Phone</h6>
+                    <a href="tel:+1 (770) 783-1218">+1 (770) 783-1218</a>
+                    <a href="tel:+1 (770) 783-1218">+1 (770) 783-1218</a>
                   </div>
+                </div>
               </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="addres_line_2">
+                    <h6>Follow Us</h6>
+                    <ul class="icon_wrapper">
+                      <li><a href=""><img src="/assets/images/icons/twitter.svg" alt="" srcset=""></a></li>
+                      <li><a href=""><img src="/assets/images/icons/linkedin.svg" alt="" srcset=""></a></li>
+                      <li><a href=""><img src="/assets/images/icons/facebook.svg" alt="" srcset=""></a></li>
+                      <li><a href=""><img src="/assets/images/icons/pinterest.svg" alt="" srcset=""></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="addres_line_2">
+                    <h6>Email</h6>
+                    <a href="mailto:contact@gatecorpus.com">contact@gatecorpus.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="col-lg-6">
+            <div class="right">
+              <div class="form_wrapper">
+                <h2>Call Us Or<br>
+                  Fill The Form</h2>
+                <form action="" method="post">
+                  <input type="text" name="text" id="" placeholder="Full name">
+                  <input type="email" name="email" id="" placeholder="Email">
+                  <input type="number" name="number" id="" placeholder="Phone">
+                  <input type="text" name="text" id="" placeholder="Subject">
+                  <textarea name="" id="" cols="30" rows="3" placeholder="Description"></textarea>
+                  <button type="submit" name="submit">SEND A MESSAGE</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </section> 
+    </div>
+  </section>
 
   <footer>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="left">
-                    <div class="logo_wrapper">
-                        <img src="/assets/images/logo.png" alt="" srcset="">
-                    </div>
-                </div>
-             </div>
-            <div class="col-lg-4">
-                <div class="middle">
-                    <h6>Main Menu</h6>
-                    <div class="nav_links_wrapper">
-                        <div class="link"><a href="">Home</a></div>
-                        <div class="link"><a href="">About Us</a></div>
-                        <div class="link"><a href="/pages/services/">Services</a></div>
-                        <div class="link"><a href="">Resources</a></div>
-                        <div class="link"><a href="">Blogs</a></div>
-                    </div>
-                </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="left">
+            <div class="logo_wrapper">
+              <img src="/assets/images/logo.png" alt="" srcset="">
             </div>
-            <div class="col-lg-5">
-                <div class="right">
-                    <h6>Newsletter</h6>
-                    <p>You will be notified when something new will be appear.</p>
-                    <div class="newsletter_input">
-                        <input type="email" name="" id="" placeholder="Email">
-                        <button type="submit">Subscribe</button>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="middle">
+            <h6>Main Menu</h6>
+            <div class="nav_links_wrapper">
+              <div class="link"><a href="">Home</a></div>
+              <div class="link"><a href="">About Us</a></div>
+              <div class="link"><a href="/pages/services/">Services</a></div>
+              <div class="link"><a href="">Resources</a></div>
+              <div class="link"><a href="">Blogs</a></div>
             </div>
+          </div>
         </div>
-        <div class="bottom">
-            <p>Copyright @ <script>document.write(new Date().getFullYear())</script> GATE Corporation. All rights reserved</p>
-            <p>Privacy policy | Terms of use</p>
+        <div class="col-lg-5">
+          <div class="right">
+            <h6>Newsletter</h6>
+            <p>You will be notified when something new will be appear.</p>
+            <div class="newsletter_input">
+              <input type="email" name="" id="" placeholder="Email">
+              <button type="submit">Subscribe</button>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="bottom">
+        <p>Copyright @
+          <script>document.write(new Date().getFullYear())</script> GATE Corporation. All rights reserved
+        </p>
+        <p>Privacy policy | Terms of use</p>
+      </div>
     </div>
-</footer>    
+  </footer>
 
-    <script src="/assets/js/bootstrap-js/bootstrap.bundle.js"></script>
-    <script src="/pages/services/services.js"></script>
+  <script src="/assets/js/bootstrap-js/bootstrap.bundle.js"></script>
+  <script src="/pages/services/services.js"></script>
 </body>
+
 </html>

@@ -92,6 +92,11 @@ button {
   transition: transform 0.3s ease;
 }
 
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
 button.gray_btn {
   background-color: #085dbf;
   font-weight: 500;
@@ -876,6 +881,15 @@ footer .bottom {
 .section2 {
   color: var(--heading-color);
 }
+.section2.copy .liner .content_wrapper .faq {
+  padding-block: 0;
+}
+.section2.copy .liner .content_wrapper .faq .acc_wrapper {
+  margin-top: 30px;
+}
+.section2.copy .liner .content_wrapper {
+  padding-bottom: 50px;
+}
 .section2.liner_b {
   border-bottom: 1px solid #cfcfcf;
 }
@@ -888,10 +902,24 @@ footer .bottom {
   color: var(--changing-variable-background-color);
 }
 .section2 .liner .content_wrapper {
-  padding-block: 70px;
+  padding-top: 100px;
+}
+.section2 .liner .content_wrapper button.explore_btn {
+  background-color: #085dbf;
+  font-weight: 500;
+  color: #fff;
+  padding: 7px 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  outline: none;
+  text-align: center;
 }
 .section2 .liner .content_wrapper .cards {
-  padding-block: 100px;
+  padding-block: 60px;
+}
+.section2 .liner .content_wrapper .cards:first-child {
+  padding-block: 100px; /* You can adjust the padding value as needed */
 }
 .section2 .liner .content_wrapper .cards .card_wrapper {
   background-color: #5c5c5c;
@@ -982,9 +1010,12 @@ footer .bottom {
 .section2 .liner .content_wrapper .cards .card_wrapper:hover {
   transform: translateY(-20px);
 }
+.section2 .liner .content_wrapper .faq {
+  padding-block: 100px;
+}
 .section2 .liner .content_wrapper .faq h2 {
   font-size: var(--heading_sec);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #085dbf;
 }
 .section2 .liner .content_wrapper .faq .acc_wrapper {
@@ -1101,7 +1132,6 @@ footer .bottom {
 }
 .services .container .grid .card_content .img_wrapper {
   max-width: 150px;
-  max-height: 150px;
   overflow: hidden;
   filter: grayscale(1);
   transition: filter 0.3s ease;
@@ -1129,10 +1159,15 @@ footer .bottom {
 
 section.work {
   background-color: #ddd;
-  padding-top: 30px;
+  color: #000;
+  padding-block: 50px;
 }
 section.work h1 {
   color: var(--changing-variable-background-color);
+}
+section.work .second {
+  padding-top: 90px;
+  padding-bottom: 50px;
 }
 section.work .card {
   background-color: transparent;
@@ -1188,6 +1223,9 @@ section.work .card .content_wrapper .content p {
 
 section.features {
   color: #000;
+}
+section.features.copy .container .checks {
+  margin-block: 20px;
 }
 section.features .container {
   border-inline: 1px solid #cfcfcf;

@@ -29,3 +29,148 @@ menuItem.dataset.menuIndex = index;
 menuItem.addEventListener('mouseenter', showMenu);
 menuItem.addEventListener('mouseleave', hideMenu);
 });
+
+document.querySelector(".explore_cards").addEventListener("click", (evt) => {
+    const hiddenCardsRow = document.querySelector(".section2 .content_wrapper .cards.d-none");
+    if (hiddenCardsRow) {
+        hiddenCardsRow.classList.remove("d-none");
+    } else {
+        const cards = document.querySelectorAll(".section2 .content_wrapper .cards");
+        for (let idx = 1; idx < cards?.length; idx++) {
+            cards[idx]?.classList.add("d-none");
+        }
+    }
+    if (!document.querySelector(".section2 .content_wrapper .cards.d-none")) {
+        evt.target.innerText = "Show Less";
+    } else {
+        evt.target.innerText = "explore more";
+    }
+});
+
+document.querySelector(".services button.more").addEventListener("click", (evt) => {
+    const hiddenCards = document.querySelectorAll(".services .card_content.d-none");
+    if (hiddenCards?.length) {
+        hiddenCards?.forEach(card => {
+            card.classList.remove("d-none");
+        });
+    } else {
+        const cards = document.querySelectorAll(".services .card_content");
+        for (let idx = 3; idx < cards?.length; idx++) {       
+            cards[idx]?.classList.add("d-none");
+        }
+    }
+    if (!document.querySelectorAll(".services .card_content.d-none")?.length) {
+        evt.target.innerText = "Show Less";
+    } else {
+        evt.target.innerText = "explore more";
+    }
+});
+
+document.querySelector(".more_work_1").addEventListener("click", (evt) => {
+    const hiddenCardsRow = document.querySelector(".work .first .row.d-none");
+    if (hiddenCardsRow) {
+        hiddenCardsRow.classList.remove("d-none");
+    } else {
+        const row = document.querySelectorAll(".work .first .row");
+        for (let idx = 1; idx < row?.length; idx++) {       
+            row[idx]?.classList.add("d-none");
+        }
+    }
+    if (!document.querySelector(".work .first .row.d-none")) {
+        evt.target.innerText = "Show Less";
+    } else {
+        evt.target.innerText = "explore more";
+    }
+});
+
+document.querySelector(".more_work_2").addEventListener("click", (evt) => {
+    const hiddenCardsRow = document.querySelector(".work .second .row.d-none");
+    if (hiddenCardsRow) {
+        hiddenCardsRow.classList.remove("d-none");
+    } else {
+        const row = document.querySelectorAll(".work .second .row");
+        for (let idx = 1; idx < row?.length; idx++) {       
+            row[idx]?.classList.add("d-none");
+        }
+    }
+    if (!document.querySelector(".work .second .row.d-none")) {
+        evt.target.innerText = "Show Less";
+    } else {
+        evt.target.innerText = "explore more";
+    }
+});
+
+document.querySelector(".more_checks").addEventListener("click", (evt) => {
+    const hiddenChecks = document.querySelectorAll(".features:not(.copy) .checks .check.d-none");
+    if (hiddenChecks?.length) {
+        hiddenChecks.forEach(check => {
+            check.classList.remove("d-none");
+        });
+    } else {
+        const checks = document.querySelectorAll(".features:not(.copy) .checks .check");
+        for (let idx = 3; idx < checks.length; idx++) {
+            checks[idx]?.classList.add("d-none");
+        }
+    }
+    if (!document.querySelectorAll(".features:not(.copy) .checks .check.d-none")?.length) {
+        evt.target.innerText = "Show Less";
+    } else {
+        evt.target.innerText = "explore more";
+    }
+});
+
+document.querySelector(".accTwoBtn").addEventListener("click", (evt) => {
+    const hiddenItems = document.querySelectorAll(".section2.copy .accordion-item.d-none");
+    if (hiddenItems?.length) {
+        hiddenItems.forEach(item => {
+            item.classList.remove("d-none");
+        });
+    } else {
+        const items = document.querySelectorAll(".section2.copy .accordion-item");
+        for (let idx = 3; idx < items.length; idx++) {
+            items[idx]?.classList.add("d-none");
+        }
+    }
+    if (!document.querySelectorAll(".section2.copy .accordion-item.d-none")?.length) {
+        evt.target.innerText = "Show Less";
+    } else {
+        evt.target.innerText = "explore more";
+    }
+});
+
+document.querySelector(".features_copy_btn").addEventListener("click", (evt) => {
+    const checks = document.querySelectorAll(".features.copy .checks");
+    const hiddenChecks = document.querySelectorAll(".features.copy .checks .check.d-none");
+    if (hiddenChecks?.length) {
+        hiddenChecks.forEach(check => {
+            check.classList.remove("d-none");
+        });
+        evt.target.innerText = "Show less";
+    } else {
+        checks.forEach(check => {
+            for (let i = 2; i < check?.querySelectorAll(".check").length; i++) {
+                check?.querySelectorAll(".check")[i]?.classList.add("d-none");
+            }
+            evt.target.innerText = "Explore more";
+        });
+    }
+});
+
+document.querySelector(".faq_more").addEventListener("click", (evt) => {
+    const hiddenItems = document.querySelectorAll(".section2:not(.copy) .accordion-item.d-none");
+    if (hiddenItems?.length) {
+        hiddenItems.forEach(item => {
+            item.classList.remove("d-none");
+        });
+    } else {
+        const items = document.querySelectorAll(".section2:not(.copy) .accordion-item");
+        for (let idx = 2; idx < items.length; idx++) {
+            items[idx]?.classList.add("d-none");
+        }
+    }
+    if (!document.querySelectorAll(".section2:not(.copy) .accordion-item.d-none")?.length) {
+        evt.target.innerText = "Show Less";
+    } else {
+        evt.target.innerText = "explore more";
+    }
+});
