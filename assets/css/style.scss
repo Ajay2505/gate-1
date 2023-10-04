@@ -97,6 +97,15 @@ $jjjgj: #ec5ecb;
 //     filter: grayscale(1);
 // }
 
+.heading_sec {
+  font-size: var(--heading_sec);
+}
+
+.color_blue {
+  color: var(--changing-variable-background-color);
+}
+
+
 body {
   margin: 0;
   padding: 0;
