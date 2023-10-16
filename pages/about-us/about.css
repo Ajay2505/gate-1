@@ -1,0 +1,259 @@
+
+.blue_color {
+    color: var(--changing-variable-background-color);
+}
+
+.bw_boxes {
+    width: 100px;    
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    transform: translateY(50%);
+    background: linear-gradient(to top, var(--changing-variable-background-color) 50%, #fff 50%);
+}
+
+.main_section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    background-image: url("https://assets.website-files.com/642ecc138d1257ed9c748c87/644be56618475727b613b705_Banner%20Home%201%20(1).webp");
+    background-blend-mode: overlay;
+}
+
+.section_2 .sec_2_content_wrapper h1 {
+    -webkit-text-stroke-color: var(--changing-variable-background-color);
+}
+
+.section_2 .sec_2_content_wrapper .left img {
+    filter: none;
+}
+
+.section_2 .sec_2_content_wrapper .right h2 {
+    color: var(--changing-variable-background-color);
+}
+
+.section_2 .sec_2_content_wrapper .right a {
+    background-color: var(--changing-variable-background-color);
+}
+
+.section_2 .sec_2_content_wrapper .for_adj_padding {
+    padding-block: 30px 150px;
+}
+
+.mission_section {
+    position: relative;
+    padding-block: 150px 100px;
+    background-color: var(--changing-variable-background-color);
+}
+
+.mission_section .bw_boxes {
+    top: 0;
+    left: 40px;
+    right: auto;
+    bottom: auto;
+    transform: translateY(-50%);
+    background: linear-gradient(to bottom, var(--changing-variable-background-color) 50%, #fff 50%);
+}
+
+.history_section {
+    color: #000;
+    padding-block: 150px;
+}
+
+.history_section .mySwiper {
+    width: 100%;
+    height: 100%;
+}
+
+.history_section .mySwiper .swiper-slide {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    padding: 40px;
+    padding-bottom: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.history_section .mySwiper .swiper-slide::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    transform: translateY(50%);
+    border-radius: 50%;
+    bottom: 0;
+    left: 30px;
+    position: absolute;
+    background-color: var(--changing-variable-background-color);
+}
+
+.history_section .mySwiper .swiper-slide h2.stroke {
+    color: transparent;
+    font-family: "carisma_gothic700_bold";
+    font-size: clamp(40px, 6vw, 90px);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--changing-variable-background-color);
+}
+
+.team_section {
+    padding-bottom: 150px;
+    color: #000;
+}
+
+.team_section .card_wrapper .img_wrapper img {
+    filter: grayscale(1);
+    transition: filter .25s ease-in-out;
+}
+
+.team_section .card_wrapper:hover .img_wrapper img {
+    filter: none;
+}   
+
+.team_section .card_wrapper .img_wrapper .absolute_block {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 50px;
+    background-color: var(--changing-variable-background-color);
+    transition: transform .25s ease-in-out .25s;
+}
+
+.team_section .card_wrapper:hover .img_wrapper .absolute_block {
+    transform: translateY(100%);
+    transition: transform .25s ease-in-out;
+}
+
+.team_section .card_wrapper .img_wrapper .links_block {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: fit-content;
+    background-color: var(--changing-variable-background-color);
+    transform: translateY(100%);
+    transition: transform .25s ease-in-out;
+}
+
+.team_section .card_wrapper:hover .img_wrapper .links_block {
+    transform: translateY(0);
+    transition: transform .25s ease-in-out .25s;
+}
+
+.team_section .card_wrapper .img_wrapper .links_block a {
+    /* padding-block: 10px; */
+    transition: color .2s ease-in-out;
+}
+
+.team_section .card_wrapper .img_wrapper .links_block a:first-child {
+    padding-top: 10px;
+}
+
+.team_section .card_wrapper .img_wrapper .links_block a:last-child  {
+    padding-bottom: 10px;
+}
+
+.team_section .card_wrapper .img_wrapper .links_block a:hover {
+    color: #fff;
+}
+
+.team_section .card_wrapper .img_wrapper::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 60px;
+    height: 7px;
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+    background-color: #000;
+}
+
+.team_section .stroke {
+    color: transparent;
+    font-family: "carisma_gothic700_bold";
+    font-size: clamp(40px, 7vw, 120px);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--changing-variable-background-color);
+}
+
+.bgImg_section {
+    padding-bottom: 250px;
+}
+
+.bgImg_section .container {
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("https://g2h4v2c9.stackpathcdn.com/themes/industrium/wp-content/uploads/2022/08/alain-pham-P_qvsF7Yodw-unsplash.jpg");
+    padding-top: 150px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: end;
+}
+
+.bgImg_section .content_wrapper {
+    position: relative;
+    max-width: 700px;
+    padding: 50px;
+    background-color: var(--changing-variable-background-color);
+    background-color: #121c22;
+}
+
+.bgImg_section .content_wrapper .absolute_block {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    padding-right: 50px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: end;    
+    background-color: var(--changing-variable-background-color);
+}
+
+.bgImg_section .bw_boxes {
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: auto;
+    transform: translateY(-50%);
+    background: linear-gradient(to bottom, var(--changing-variable-background-color) 50%, #fff 50%);   
+}
+
+.bgImg_section .bgSwiper-pagination {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.bgImg_section .swiper-slide {
+    padding-block: 50px;
+}
+
+.bgImg_section .bgSwiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.bgImg_section .bgSwiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: transparent;
+    outline: 1px solid #121c22;
+}
