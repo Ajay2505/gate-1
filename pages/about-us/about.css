@@ -207,7 +207,7 @@
 
 .bgImg_section .content_wrapper {
     position: relative;
-    max-width: 700px;
+    max-width: 600px;
     padding: 50px;
     background-color: var(--changing-variable-background-color);
     background-color: #121c22;
