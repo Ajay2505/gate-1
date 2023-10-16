@@ -1,0 +1,112 @@
+
+
+.accordian_section {
+    color: #000;
+    padding-block: 150px;
+}
+
+.accordian_section .accordion-item {
+    border-bottom: 1px solid rgba(0,0,0,05);
+    padding-block: 40px;
+}
+
+.accordian_section .accordion-item ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.accordian_section .accordion-item ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.accordian_section .accordion-item ul li .icon_wrapper {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--changing-variable-background-color);
+}
+
+.accordian_section .accordion-flush .accordion-item:last-child {
+    border-bottom: 1px solid rgba(0,0,0,05);    
+}
+
+.accordian_section .accordion-button::after {
+    content: none;
+}
+
+.accordian_section .accordion-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.accordian_section .accordion-header > * {
+    width: 100%;
+}
+
+.accordian_section .accordion-header .bg-blue {
+    color: #fff;
+    padding: 4px 5px;
+    background-color: var(--changing-variable-background-color);
+}
+
+.accordian_section .accordion-button {
+    width: fit-content;
+}
+
+.accordian_section .accordion-button svg {
+    transform: rotate(-45deg);
+    width: fit-content;
+    transition: transform .2s ease-in-out;
+}
+
+.accordian_section .accordion-button:not(.collapsed) svg {
+    transform: rotate(0deg);
+}
+
+.accordian_section .accordion-button:not(.collapsed) {
+    background-color: inherit;
+    box-shadow: none;
+}
+
+.accordian_section .accordion-button:focus {
+    border-color: inherit;
+    box-shadow: none;
+}
+
+.accordian_section .blue_color:hover {
+    color: var(--changing-variable-background-color);
+}
+
+.partners_section {
+    color: #000;
+    padding-bottom: 150px;
+}
+
+.partners_section .swiper-wrapper {
+    transition-timing-function: linear;
+}
+
+.partners_section .swiper-slide {
+    width: 100%;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.partners_section .swiper-slide .img_wrapper {
+    max-width: 200px;
+    opacity: .5;
+    filter: grayscale(1);
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease-in-out, filter .2s ease-in-out;
+}
+
+.partners_section .swiper-slide .img_wrapper:hover {
+    opacity: 1;
+    filter: none;
+}

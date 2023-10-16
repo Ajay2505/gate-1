@@ -49,12 +49,29 @@
   filter: grayscale(1);
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .heading_sec {
   font-size: var(--heading_sec);
 }
 
 .heading_ter {
   font-size: var(--heading_ter);
+}
+
+.sub_heading {
+  font-size: 20px;
+}
+
+.text_xs {
+  font-size: 14px;
+}
+
+.text {
+  font-size: 18px;
 }
 
 .color_blue {

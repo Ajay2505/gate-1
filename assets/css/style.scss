@@ -97,6 +97,10 @@ $jjjgj: #ec5ecb;
 //     filter: grayscale(1);
 // }
 
+.w-fit {
+  width: fit-content;
+}
+
 .heading_sec {
   font-size: var(--heading_sec);
 }
@@ -105,6 +109,17 @@ $jjjgj: #ec5ecb;
   font-size: var(--heading_ter);
 }
 
+.sub_heading {
+  font-size: 20px;
+}
+
+.text_xs {
+  font-size: 14px;
+}
+
+.text {
+  font-size: 18px;
+}
 
 .color_blue {
   color: var(--changing-variable-background-color);
