@@ -14,11 +14,274 @@
 <body>
     <header>
         <div class="container">
-            <div class="nav_wrapper">
+            <div class="nav_wrapper align-items-center">
                 <a href="/" class="logo_wrapper">
                     <img src="/assets/images/logo.png" class="logo" alt="" srcset="">
                 </a>
-                <div class="nav_options">
+                <div class="nav_bars_icon d-block d-lg-none">
+                    <a href="#" class="bars">
+                        <div class="close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                            </svg>
+                        </div>
+                        <div class="open">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <div class="mobile_navbar">
+                        <ul class="upper">
+                            <li><a href="/pages/about-us/">ABOUT US</a></li>
+                            <li><a href="#">RESOURCES</a></li>
+                            <li><a href="/pages/careers/">START WORKING WITH US</a></li>
+                        </ul>
+                        <div class="nav_lower">
+                            <ul class="lower">
+                                <li class="menu_itself">
+                                    <div class="inner_wrapper">
+                                        <a href="/pages/industry/">Industries</a> <span class="arrow"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                                class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                            </svg></span>
+                                    </div>
+                                    <!-- <div class="menu__wrapper">
+                                        <ul class="menu__submenu">
+                                            <li class="menu__subitem">
+                                                <a href="/engineering/">
+                                                    <div class="menu__subitem-title">Software Development</div>
+                                                    <div class="menu__text">
+                                                        <p>Development of trouble-free software for thermal power enterprises.</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+            
+                                            <li class="menu__subitem">
+                                                <a href="/engineering/">
+                                                    <div class="menu__subitem-title">ASCAPC</div>
+                                                    <div class="menu__text">
+                                                        <p>Automated systems of electric energy and energy resources are becoming
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+            
+                                            <li class="menu__subitem">
+                                                <a href="/engineering/">
+                                                    <div class="menu__subitem-title">Telemecanique</div>
+                                                    <div class="menu__text">
+                                                        <p>We provides complete solutions with a range of components </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+            
+                                            <li class="menu__subitem">
+                                                <a href="/engineering/">
+                                                    <div class="menu__subitem-title">Planning</div>
+                                                    <div class="menu__text">
+                                                        <p>Our planning specialists think through everything down </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+            
+                                            <li class="menu__subitem">
+                                                <a href="/engineering/">
+                                                    <div class="menu__subitem-title">Cogeneration</div>
+                                                    <div class="menu__text">
+                                                        <p>The heat is used for heating and the production of </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+            
+                                            <li class="menu__subitem">
+                                                <a href="/engineering/">
+                                                    <div class="menu__subitem-title">Electrics</div>
+                                                    <div class="menu__text">
+                                                        <p>We provide professional installation of electrical equipment </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+            
+                                            <li class="menu__subitem">
+                                                <a href="/engineering/">
+                                                    <div class="menu__subitem-title">Water supply</div>
+                                                    <div class="menu__text">
+                                                        <p>Advanced cooling with water in a closed circuit.</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div> -->
+                                </li>
+                                <li class="menu_itself">
+                                    <div class="inner_wrapper">
+                                        <a href="#">Capabilities</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="10" height="10" fill="currentColor" class="bi bi-caret-up-fill"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                            </svg></span>
+                                    </div>
+                                    <div class="menu__wrapper">
+                                        <ul class="menu__submenu">
+                                            <li class="menu__subitem">
+                                                <a href="/procurement/">
+                                                    <div class="menu__subitem-title">Logistics and transport</div>
+                                                    <div class="menu__text">
+                                                        <p>We deliver any goods anywhere in the world. Thanks to our regional.
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="menu__subitem">
+                                                <a href="/procurement/">
+                                                    <div class="menu__subitem-title">Purchase</div>
+                                                    <div class="menu__text">
+                                                        <p>We buy industrial equipment. From Escalators to crypto mining
+                                                            hardware
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="menu__subitem">
+                                                <a href="/procurement/">
+                                                    <div class="menu__subitem-title">Equipment and materials</div>
+                                                    <div class="menu__text">
+                                                        <p>Modern and ecological materials based on innovative technologies</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu_itself">
+                                    <div class="inner_wrapper">
+                                        <a href="#">Engineering</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="10" height="10" fill="currentColor" class="bi bi-caret-up-fill"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                            </svg></span>
+                                    </div>
+                                    <div class="menu__wrapper menu__wrapper--center" style="left:0;">
+                                        <ul class="menu__submenu">
+                                            <li class="menu__subitem">
+                                                <a href="construction.php">
+                                                    <div class="menu__subitem-title">Electrical installation</div>
+                                                    <div class="menu__text">
+                                                        <p>Modernization of premiums to modern technological standards in power
+                                                            grids</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="menu__subitem">
+                                                <a href="/construction/">
+                                                    <div class="menu__subitem-title">Construction</div>
+                                                    <div class="menu__text">
+                                                        <p>Modern building technology and experience contributes to fast </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="menu__subitem">
+                                                <a href="/construction/">
+                                                    <div class="menu__subitem-title">Green Energy</div>
+                                                    <div class="menu__text">
+                                                        <p>Care and conservation of natural resources is our main policy</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="menu__subitem">
+                                                <a href="/construction/">
+                                                    <div class="menu__subitem-title">Heat recovery</div>
+                                                    <div class="menu__text">
+                                                        <p>Innovative heat recovery system with the help of heat removal</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu_itself">
+                                    <div class="inner_wrapper">
+                                        <a href="#">Manufacturing</a> <span class="arrow"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                                class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                            </svg></span>
+                                    </div>
+                                    <div class="menu__wrapper" style="left:0;">
+                                        <ul class="menu__submenu">
+                                            <li class="menu__subitem">
+                                                <a href="/marker/">
+                                                    <div class="menu__subitem-title">Energy</div>
+                                                    <div class="menu__text">
+                                                        <p>Extensive experience in construction and real-time monitoring</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="menu__subitem">
+                                                <a href="/marker/">
+                                                    <div class="menu__subitem-title">Infrastructure</div>
+                                                    <div class="menu__text">
+                                                        <p>Creation of efficiency and eco-friendly urban and industrial</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="menu__subitem">
+                                                <a href="/marker/">
+                                                    <div class="menu__subitem-title">Electricity</div>
+                                                    <div class="menu__text">
+                                                        <p>We focus on the most efficient methods of consumption</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="menu__subitem">
+                                                <a href="/marker/">
+                                                    <div class="menu__subitem-title">Big data analytics</div>
+                                                    <div class="menu__text">
+                                                        <p>Own software and experienced specialists for data </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="menu__subitem">
+                                                <a href="/marker/">
+                                                    <div class="menu__subitem-title">Logistics</div>
+                                                    <div class="menu__text">
+                                                        <p>Experience in creating logistics hubs and delivering anywhere in the
+                                                            world</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+        
+                                            <li class="menu__subitem">
+                                                <a href="/marker/">
+                                                    <div class="menu__subitem-title">Trends in data analytics</div>
+                                                    <div class="menu__text">
+                                                        <p>Investments in promising technology industries that help us </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>                        
+                </div>
+                <div class="nav_options d-none d-lg-block">
                     <div class="nav_upper">
                         <ul class="upper">
                             <li><a href="/pages/about-us/">ABOUT US</a></li>
@@ -28,13 +291,13 @@
                     </div>
                 </div>
             </div>
-            <div class="nav_lower">
+            <div class="nav_lower d-none d-lg-block">
                 <ul class="lower">
                     <li class="menu_itself">
                         <div class="inner_wrapper">
-                            <a href="/pages/industry/">Industries</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="10" height="10" fill="currentColor" class="bi bi-caret-up-fill"
-                                    viewBox="0 0 16 16">
+                            <a href="/pages/industry/">Industries</a> <span class="arrow"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-caret-up-fill" viewBox="0 0 16 16">
                                     <path
                                         d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
                                 </svg></span>
@@ -109,7 +372,7 @@
                     </li>
                     <li class="menu_itself">
                         <div class="inner_wrapper">
-                            <a href="">Capabilities</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                            <a href="#">Capabilities</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
                                     width="10" height="10" fill="currentColor" class="bi bi-caret-up-fill"
                                     viewBox="0 0 16 16">
                                     <path
@@ -122,7 +385,8 @@
                                     <a href="/procurement/">
                                         <div class="menu__subitem-title">Logistics and transport</div>
                                         <div class="menu__text">
-                                            <p>We deliver any goods anywhere in the world. Thanks to our regional.</p>
+                                            <p>We deliver any goods anywhere in the world. Thanks to our regional.
+                                            </p>
                                         </div>
                                     </a>
                                 </li>
@@ -131,7 +395,8 @@
                                     <a href="/procurement/">
                                         <div class="menu__subitem-title">Purchase</div>
                                         <div class="menu__text">
-                                            <p>We buy industrial equipment. From Escalators to crypto mining hardware
+                                            <p>We buy industrial equipment. From Escalators to crypto mining
+                                                hardware
                                             </p>
                                         </div>
                                     </a>
@@ -150,7 +415,7 @@
                     </li>
                     <li class="menu_itself">
                         <div class="inner_wrapper">
-                            <a href="">Engineering</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                            <a href="#">Engineering</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
                                     width="10" height="10" fill="currentColor" class="bi bi-caret-up-fill"
                                     viewBox="0 0 16 16">
                                     <path
@@ -200,9 +465,9 @@
                     </li>
                     <li class="menu_itself">
                         <div class="inner_wrapper">
-                            <a href="">Manufacturing</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="10" height="10" fill="currentColor" class="bi bi-caret-up-fill"
-                                    viewBox="0 0 16 16">
+                            <a href="#">Manufacturing</a> <span class="arrow"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                    class="bi bi-caret-up-fill" viewBox="0 0 16 16">
                                     <path
                                         d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
                                 </svg></span>
@@ -702,45 +967,45 @@
 
     <footer>
         <div class="container">
-          <div class="row">
-            <div class="col-lg-3">
-              <div class="left">
-                <div class="logo_wrapper">
-                  <img src="/assets/images/logo.png" alt="" srcset="">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="left">
+                        <a href="/">
+                            <div class="logo_wrapper">
+                                <img src="/assets/images/logo.png" alt="" srcset="">
+                            </div>
+                        </a>
+                    </div>
+                 </div>
+                <div class="col-lg-4">
+                    <div class="middle">
+                        <h6>Main Menu</h6>
+                        <div class="nav_links_wrapper">
+                            <div class="link"><a href="/">Home</a></div>
+                            <div class="link"><a href="/pages/about-us/">About Us</a></div>
+                            <div class="link"><a href="/pages/services/">Services</a></div>
+                            <div class="link"><a href="#">Resources</a></div>
+                            <div class="link"><a href="#">Blogs</a></div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="middle">
-                <h6>Main Menu</h6>
-                <div class="nav_links_wrapper">
-                  <div class="link"><a href="">Home</a></div>
-                  <div class="link"><a href="">About Us</a></div>
-                  <div class="link"><a href="/pages/services/">Services</a></div>
-                  <div class="link"><a href="">Resources</a></div>
-                  <div class="link"><a href="">Blogs</a></div>
+                <div class="col-lg-5">
+                    <div class="right">
+                        <h6>Newsletter</h6>
+                        <p>You will be notified when something new will be appear.</p>
+                        <div class="newsletter_input">
+                            <input type="email" name="" id="" placeholder="Email">
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-lg-5">
-              <div class="right">
-                <h6>Newsletter</h6>
-                <p>You will be notified when something new will be appear.</p>
-                <div class="newsletter_input">
-                  <input type="email" name="" id="" placeholder="Email">
-                  <button type="submit">Subscribe</button>
-                </div>
-              </div>
+            <div class="bottom">
+                <p>Copyright @ <script>document.write(new Date().getFullYear())</script> GATE Corporation. All rights reserved</p>
+                <p>Privacy policy | Terms of use</p>
             </div>
-          </div>
-          <div class="bottom">
-            <p>Copyright @
-              <script>document.write(new Date().getFullYear())</script> GATE Corporation. All rights reserved
-            </p>
-            <p>Privacy policy | Terms of use</p>
-          </div>
         </div>
-    </footer> 
+    </footer>  
 
     <script src="/assets/js/bootstrap-js/bootstrap.bundle.js"></script>
     <script src="/assets/js/swiper-bundle.min.js"></script>
@@ -786,6 +1051,13 @@
             // autoplay: true
             // simulateTouch: false
         });
+        const navIcon = document.querySelector(".nav_bars_icon > a.bars");
+        if (navIcon) {
+            navIcon.addEventListener("click", evt => {
+                evt.currentTarget.parentElement.classList.toggle("active");
+                document.querySelector("body").style.overflow = document.querySelector("body").style.overflow === "hidden" ? "auto" : "hidden";
+            });
+        }
     </script>
 </body>
 </html>

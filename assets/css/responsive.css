@@ -22,10 +22,31 @@
     .section_2 .sec_2_content_wrapper h1{
         font-size: clamp(40px, 18.5vw, 140px);
     }
+    .section_3 .sec_3_content_wrapper .carousel_wrapper .carousel_content .right {
+        padding: 0;
+        border: none;
+        padding-top: 30px;
+    }
+    .section_4 .sec_4_content_wrapper .heading_wrapper h2 {
+        transform: none;
+        margin-top: 30px;
+    }
+    .section_6 .line_adj .sec_6_content_wrapper .heading_wrapper h2 {
+        transform: none;
+        margin-top: 30px;
+    }
 }
 
 @media only screen and (max-width:767px) {
     .section_2 .sec_2_content_wrapper h1{
         font-size: clamp(40px, 18.5vw, 100px);
     }
+    .section_4 .sec_4_content_wrapper .right .accordian_parent {
+        padding: 0;
+    }
 }
+
+@media only screen and (max-width: 500px) {
+
+}
+

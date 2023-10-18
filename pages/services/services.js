@@ -30,6 +30,14 @@ menuItem.addEventListener('mouseenter', showMenu);
 menuItem.addEventListener('mouseleave', hideMenu);
 });
 
+const navIcon = document.querySelector(".nav_bars_icon > a.bars");
+if (navIcon) {
+    navIcon.addEventListener("click", evt => {
+        evt.currentTarget.parentElement.classList.toggle("active");
+        document.querySelector("body").style.overflow = document.querySelector("body").style.overflow === "hidden" ? "auto" : "hidden";
+    });
+}
+
 document.querySelector(".explore_cards").addEventListener("click", (evt) => {
     const hiddenCardsRow = document.querySelector(".section2 .content_wrapper .cards.d-none");
     if (hiddenCardsRow) {

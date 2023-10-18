@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,15 +15,279 @@
     <link rel="stylesheet" href="assets/css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
+
 <body>
     <div class="site_wrap">
         <header>
             <div class="container">
-                <div class="nav_wrapper">
+                <div class="nav_wrapper align-items-center">
                     <a href="/" class="logo_wrapper">
                         <img src="/assets/images/logo.png" class="logo" alt="" srcset="">
                     </a>
-                    <div class="nav_options">
+                    <div class="nav_bars_icon d-block d-lg-none">
+                        <a href="#" class="bars">
+                            <div class="close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                                </svg>
+                            </div>
+                            <div class="open">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="mobile_navbar">
+                            <ul class="upper">
+                                <li><a href="/pages/about-us/">ABOUT US</a></li>
+                                <li><a href="#">RESOURCES</a></li>
+                                <li><a href="/pages/careers/">START WORKING WITH US</a></li>
+                            </ul>
+                            <div class="nav_lower">
+                                <ul class="lower">
+                                    <li class="menu_itself">
+                                        <div class="inner_wrapper">
+                                            <a href="/pages/industry/">Industries</a> <span class="arrow"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                                    class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                                </svg></span>
+                                        </div>
+                                        <!-- <div class="menu__wrapper">
+                                            <ul class="menu__submenu">
+                                                <li class="menu__subitem">
+                                                    <a href="/engineering/">
+                                                        <div class="menu__subitem-title">Software Development</div>
+                                                        <div class="menu__text">
+                                                            <p>Development of trouble-free software for thermal power enterprises.</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                
+                                                <li class="menu__subitem">
+                                                    <a href="/engineering/">
+                                                        <div class="menu__subitem-title">ASCAPC</div>
+                                                        <div class="menu__text">
+                                                            <p>Automated systems of electric energy and energy resources are becoming
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                
+                                                <li class="menu__subitem">
+                                                    <a href="/engineering/">
+                                                        <div class="menu__subitem-title">Telemecanique</div>
+                                                        <div class="menu__text">
+                                                            <p>We provides complete solutions with a range of components </p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                
+                                                <li class="menu__subitem">
+                                                    <a href="/engineering/">
+                                                        <div class="menu__subitem-title">Planning</div>
+                                                        <div class="menu__text">
+                                                            <p>Our planning specialists think through everything down </p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                
+                                                <li class="menu__subitem">
+                                                    <a href="/engineering/">
+                                                        <div class="menu__subitem-title">Cogeneration</div>
+                                                        <div class="menu__text">
+                                                            <p>The heat is used for heating and the production of </p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                
+                                                <li class="menu__subitem">
+                                                    <a href="/engineering/">
+                                                        <div class="menu__subitem-title">Electrics</div>
+                                                        <div class="menu__text">
+                                                            <p>We provide professional installation of electrical equipment </p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                
+                                                <li class="menu__subitem">
+                                                    <a href="/engineering/">
+                                                        <div class="menu__subitem-title">Water supply</div>
+                                                        <div class="menu__text">
+                                                            <p>Advanced cooling with water in a closed circuit.</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div> -->
+                                    </li>
+                                    <li class="menu_itself">
+                                        <div class="inner_wrapper">
+                                            <a href="#">Capabilities</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="10" height="10" fill="currentColor" class="bi bi-caret-up-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                                </svg></span>
+                                        </div>
+                                        <div class="menu__wrapper">
+                                            <ul class="menu__submenu">
+                                                <li class="menu__subitem">
+                                                    <a href="/procurement/">
+                                                        <div class="menu__subitem-title">Logistics and transport</div>
+                                                        <div class="menu__text">
+                                                            <p>We deliver any goods anywhere in the world. Thanks to our regional.
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+            
+                                                <li class="menu__subitem">
+                                                    <a href="/procurement/">
+                                                        <div class="menu__subitem-title">Purchase</div>
+                                                        <div class="menu__text">
+                                                            <p>We buy industrial equipment. From Escalators to crypto mining
+                                                                hardware
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+            
+                                                <li class="menu__subitem">
+                                                    <a href="/procurement/">
+                                                        <div class="menu__subitem-title">Equipment and materials</div>
+                                                        <div class="menu__text">
+                                                            <p>Modern and ecological materials based on innovative technologies</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="menu_itself">
+                                        <div class="inner_wrapper">
+                                            <a href="#">Engineering</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="10" height="10" fill="currentColor" class="bi bi-caret-up-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                                </svg></span>
+                                        </div>
+                                        <div class="menu__wrapper menu__wrapper--center" style="left:0;">
+                                            <ul class="menu__submenu">
+                                                <li class="menu__subitem">
+                                                    <a href="construction.php">
+                                                        <div class="menu__subitem-title">Electrical installation</div>
+                                                        <div class="menu__text">
+                                                            <p>Modernization of premiums to modern technological standards in power
+                                                                grids</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+            
+                                                <li class="menu__subitem">
+                                                    <a href="/construction/">
+                                                        <div class="menu__subitem-title">Construction</div>
+                                                        <div class="menu__text">
+                                                            <p>Modern building technology and experience contributes to fast </p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+            
+                                                <li class="menu__subitem">
+                                                    <a href="/construction/">
+                                                        <div class="menu__subitem-title">Green Energy</div>
+                                                        <div class="menu__text">
+                                                            <p>Care and conservation of natural resources is our main policy</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+            
+                                                <li class="menu__subitem">
+                                                    <a href="/construction/">
+                                                        <div class="menu__subitem-title">Heat recovery</div>
+                                                        <div class="menu__text">
+                                                            <p>Innovative heat recovery system with the help of heat removal</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="menu_itself">
+                                        <div class="inner_wrapper">
+                                            <a href="#">Manufacturing</a> <span class="arrow"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                                    class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                                </svg></span>
+                                        </div>
+                                        <div class="menu__wrapper" style="left:0;">
+                                            <ul class="menu__submenu">
+                                                <li class="menu__subitem">
+                                                    <a href="/marker/">
+                                                        <div class="menu__subitem-title">Energy</div>
+                                                        <div class="menu__text">
+                                                            <p>Extensive experience in construction and real-time monitoring</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+            
+                                                <li class="menu__subitem">
+                                                    <a href="/marker/">
+                                                        <div class="menu__subitem-title">Infrastructure</div>
+                                                        <div class="menu__text">
+                                                            <p>Creation of efficiency and eco-friendly urban and industrial</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+            
+                                                <li class="menu__subitem">
+                                                    <a href="/marker/">
+                                                        <div class="menu__subitem-title">Electricity</div>
+                                                        <div class="menu__text">
+                                                            <p>We focus on the most efficient methods of consumption</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+            
+                                                <li class="menu__subitem">
+                                                    <a href="/marker/">
+                                                        <div class="menu__subitem-title">Big data analytics</div>
+                                                        <div class="menu__text">
+                                                            <p>Own software and experienced specialists for data </p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+            
+                                                <li class="menu__subitem">
+                                                    <a href="/marker/">
+                                                        <div class="menu__subitem-title">Logistics</div>
+                                                        <div class="menu__text">
+                                                            <p>Experience in creating logistics hubs and delivering anywhere in the
+                                                                world</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+            
+                                                <li class="menu__subitem">
+                                                    <a href="/marker/">
+                                                        <div class="menu__subitem-title">Trends in data analytics</div>
+                                                        <div class="menu__text">
+                                                            <p>Investments in promising technology industries that help us </p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="nav_options d-none d-lg-block">
                         <div class="nav_upper">
                             <ul class="upper">
                                 <li><a href="/pages/about-us/">ABOUT US</a></li>
@@ -32,13 +297,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="nav_lower">
+                <div class="nav_lower d-none d-lg-block">
                     <ul class="lower">
                         <li class="menu_itself">
                             <div class="inner_wrapper">
-                                <a href="/pages/industry/">Industries</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="10" height="10" fill="currentColor" class="bi bi-caret-up-fill"
-                                        viewBox="0 0 16 16">
+                                <a href="/pages/industry/">Industries</a> <span class="arrow"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                        class="bi bi-caret-up-fill" viewBox="0 0 16 16">
                                         <path
                                             d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
                                     </svg></span>
@@ -113,7 +378,7 @@
                         </li>
                         <li class="menu_itself">
                             <div class="inner_wrapper">
-                                <a href="">Capabilities</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                                <a href="#">Capabilities</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="10" height="10" fill="currentColor" class="bi bi-caret-up-fill"
                                         viewBox="0 0 16 16">
                                         <path
@@ -126,21 +391,23 @@
                                         <a href="/procurement/">
                                             <div class="menu__subitem-title">Logistics and transport</div>
                                             <div class="menu__text">
-                                                <p>We deliver any goods anywhere in the world. Thanks to our regional.</p>
-                                            </div>
-                                        </a>
-                                    </li>
-    
-                                    <li class="menu__subitem">
-                                        <a href="/procurement/">
-                                            <div class="menu__subitem-title">Purchase</div>
-                                            <div class="menu__text">
-                                                <p>We buy industrial equipment. From Escalators to crypto mining hardware
+                                                <p>We deliver any goods anywhere in the world. Thanks to our regional.
                                                 </p>
                                             </div>
                                         </a>
                                     </li>
-    
+
+                                    <li class="menu__subitem">
+                                        <a href="/procurement/">
+                                            <div class="menu__subitem-title">Purchase</div>
+                                            <div class="menu__text">
+                                                <p>We buy industrial equipment. From Escalators to crypto mining
+                                                    hardware
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
                                     <li class="menu__subitem">
                                         <a href="/procurement/">
                                             <div class="menu__subitem-title">Equipment and materials</div>
@@ -154,7 +421,7 @@
                         </li>
                         <li class="menu_itself">
                             <div class="inner_wrapper">
-                                <a href="">Engineering</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                                <a href="#">Engineering</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
                                         width="10" height="10" fill="currentColor" class="bi bi-caret-up-fill"
                                         viewBox="0 0 16 16">
                                         <path
@@ -172,7 +439,7 @@
                                             </div>
                                         </a>
                                     </li>
-    
+
                                     <li class="menu__subitem">
                                         <a href="/construction/">
                                             <div class="menu__subitem-title">Construction</div>
@@ -181,7 +448,7 @@
                                             </div>
                                         </a>
                                     </li>
-    
+
                                     <li class="menu__subitem">
                                         <a href="/construction/">
                                             <div class="menu__subitem-title">Green Energy</div>
@@ -190,7 +457,7 @@
                                             </div>
                                         </a>
                                     </li>
-    
+
                                     <li class="menu__subitem">
                                         <a href="/construction/">
                                             <div class="menu__subitem-title">Heat recovery</div>
@@ -204,9 +471,9 @@
                         </li>
                         <li class="menu_itself">
                             <div class="inner_wrapper">
-                                <a href="">Manufacturing</a> <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="10" height="10" fill="currentColor" class="bi bi-caret-up-fill"
-                                        viewBox="0 0 16 16">
+                                <a href="#">Manufacturing</a> <span class="arrow"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                        class="bi bi-caret-up-fill" viewBox="0 0 16 16">
                                         <path
                                             d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
                                     </svg></span>
@@ -221,7 +488,7 @@
                                             </div>
                                         </a>
                                     </li>
-    
+
                                     <li class="menu__subitem">
                                         <a href="/marker/">
                                             <div class="menu__subitem-title">Infrastructure</div>
@@ -230,7 +497,7 @@
                                             </div>
                                         </a>
                                     </li>
-    
+
                                     <li class="menu__subitem">
                                         <a href="/marker/">
                                             <div class="menu__subitem-title">Electricity</div>
@@ -239,7 +506,7 @@
                                             </div>
                                         </a>
                                     </li>
-    
+
                                     <li class="menu__subitem">
                                         <a href="/marker/">
                                             <div class="menu__subitem-title">Big data analytics</div>
@@ -248,7 +515,7 @@
                                             </div>
                                         </a>
                                     </li>
-    
+
                                     <li class="menu__subitem">
                                         <a href="/marker/">
                                             <div class="menu__subitem-title">Logistics</div>
@@ -258,7 +525,7 @@
                                             </div>
                                         </a>
                                     </li>
-    
+
                                     <li class="menu__subitem">
                                         <a href="/marker/">
                                             <div class="menu__subitem-title">Trends in data analytics</div>
@@ -277,13 +544,13 @@
 
         <section class="section_1">
             <div class="video_wrapper">
-                <video poster="assets/images/video-poster.jpeg"autoplay muted loop playsinline preload="metadata">
+                <video poster="assets/images/video-poster.jpeg" autoplay muted loop playsinline preload="metadata">
                     <source src="assets/images/gate-video.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="container px-0">
-                <div class="sec_1_content_wrapper">
-                    <h1>Opening your gateway to engineering and manufacturing 
+                <div class="sec_1_content_wrapper px-5 px-lg-0">
+                    <h1>Opening your gateway to engineering and manufacturing
                         In India</h1>
                 </div>
             </div>
@@ -295,7 +562,7 @@
                     <h1>since 1980</h1>
                     <div class="row for_adj_padding">
                         <div class="col-lg-3">
-                            <div class="left">
+                            <div class="left py-4 py-lg-0 d-grid place-items-center">
                                 <img src="assets/images/arrow-vector.svg" alt="" srcset="">
                             </div>
                         </div>
@@ -303,7 +570,12 @@
                             <div class="right">
                                 <h2>Introduction</h2>
                                 <h6>Engineering and Manufacturing partner you can trust</h6>
-                                <p>GATE Corporation leverages Decades of experience in providing low cost and quality engineering and manufacturing solutions for contract and private label manufacturino Fortune companies across diverse leverage our strong engineering team. manufacturing capablities in India and USA and our supply chain capabilities to launch new products. scale and glow operations and bring products to market on time and within budget.</p>
+                                <p>GATE Corporation leverages Decades of experience in providing low cost and quality
+                                    engineering and manufacturing solutions for contract and private label manufacturino
+                                    Fortune companies across diverse leverage our strong engineering team. manufacturing
+                                    capablities in India and USA and our supply chain capabilities to launch new
+                                    products. scale and glow operations and bring products to market on time and within
+                                    budget.</p>
                                 <a href="">LEARN MORE</a>
                             </div>
                         </div>
@@ -347,159 +619,192 @@
                     <div class="carousel_wrapper">
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
-                              <div class="swiper-slide">
-                                <div class="carousel_content">
-                                    <div class="row">
-                                        <div class="col-lg-5 d-flex align-items-center justify-content-center">
-                                            <div class="left">
-                                                <div class="image_wrapper">
-                                                    <img src="assets/images/crane-vector.svg" alt="">
+                                <div class="swiper-slide">
+                                    <div class="carousel_content">
+                                        <div class="row">
+                                            <div class="col-lg-5 d-flex align-items-center justify-content-center">
+                                                <div class="left">
+                                                    <div class="image_wrapper">
+                                                        <img src="assets/images/crane-vector.svg" alt="">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-7">
-                                            <div class="right">
-                                                <h6>Services</h6>
-                                                <h2>Engineering Services</h2>
-                                                <p>Gate Corporation is a leader in the industry for engineering services ranging from engineering design Analysis – Development – Manufacturing and Marketing. Gate can be your one-stop-shop for product development all the way from concept development through final production to market, optimizing your products and services by lowering your overall cost.</p>
+                                            <div class="col-lg-7">
+                                                <div class="right">
+                                                    <h6>Services</h6>
+                                                    <h2>Engineering Services</h2>
+                                                    <p>Gate Corporation is a leader in the industry for engineering
+                                                        services ranging from engineering design Analysis – Development
+                                                        – Manufacturing and Marketing. Gate can be your one-stop-shop
+                                                        for product development all the way from concept development
+                                                        through final production to market, optimizing your products and
+                                                        services by lowering your overall cost.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="carousel_content">
-                                    <div class="row">
-                                        <div class="col-lg-5 d-flex align-items-center justify-content-center">
-                                            <div class="left">
-                                                <div class="image_wrapper">
-                                                    <img src="assets/images/robot-vector.svg" alt="">
+                                <div class="swiper-slide">
+                                    <div class="carousel_content">
+                                        <div class="row">
+                                            <div class="col-lg-5 d-flex align-items-center justify-content-center">
+                                                <div class="left">
+                                                    <div class="image_wrapper">
+                                                        <img src="assets/images/robot-vector.svg" alt="">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-7">
-                                            <div class="right">
-                                                <h6>Services</h6>
-                                                <h2>Supply Chain Management</h2>
-                                                <p>Gate Corporation is a leader in the industry for engineering services ranging from engineering design Analysis – Development – Manufacturing and Marketing. Gate can be your one-stop-shop for product development all the way from concept development through final production to market, optimizing your products and services by lowering your overall cost.</p>
+                                            <div class="col-lg-7">
+                                                <div class="right">
+                                                    <h6>Services</h6>
+                                                    <h2>Supply Chain Management</h2>
+                                                    <p>Gate Corporation is a leader in the industry for engineering
+                                                        services ranging from engineering design Analysis – Development
+                                                        – Manufacturing and Marketing. Gate can be your one-stop-shop
+                                                        for product development all the way from concept development
+                                                        through final production to market, optimizing your products and
+                                                        services by lowering your overall cost.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <div class="carousel_content">
-                                    <div class="row">
-                                        <div class="col-lg-5 d-flex align-items-center justify-content-center">
-                                            <div class="left">
-                                                <div class="image_wrapper">
-                                                    <img src="assets/images/automation-vector.svg" alt="">
+                                <div class="swiper-slide">
+                                    <div class="carousel_content">
+                                        <div class="row">
+                                            <div class="col-lg-5 d-flex align-items-center justify-content-center">
+                                                <div class="left">
+                                                    <div class="image_wrapper">
+                                                        <img src="assets/images/automation-vector.svg" alt="">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-7">
-                                            <div class="right">
-                                                <h6>Services</h6>
-                                                <h2>Manufacturing</h2>
-                                                <p>Gate Corporation is a leader in the industry for engineering services ranging from engineering design Analysis – Development – Manufacturing and Marketing. Gate can be your one-stop-shop for product development all the way from concept development through final production to market, optimizing your products and services by lowering your overall cost.</p>
+                                            <div class="col-lg-7">
+                                                <div class="right">
+                                                    <h6>Services</h6>
+                                                    <h2>Manufacturing</h2>
+                                                    <p>Gate Corporation is a leader in the industry for engineering
+                                                        services ranging from engineering design Analysis – Development
+                                                        – Manufacturing and Marketing. Gate can be your one-stop-shop
+                                                        for product development all the way from concept development
+                                                        through final production to market, optimizing your products and
+                                                        services by lowering your overall cost.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                              </div>
-                              </div>
                             </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
                         </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- </div> -->
 
         <div class="line"></div>
         <section class="section_4">
-                <div class="container px-0">
-                    <div class="sec_4_content_wrapper">
-                        <div class="row w-100 mx-0">
-                            <div class="col-lg-2 px-0 d-flex align-items-center justify-content-center">
-                                <div class="heading_wrapper">
-                                    <h2>Why Gate</h2>
-                                </div>
+            <div class="container px-0">
+                <div class="sec_4_content_wrapper">
+                    <div class="row w-100 mx-0">
+                        <div class="col-lg-2 px-0 d-flex align-items-center justify-content-center">
+                            <div class="heading_wrapper">
+                                <h2>Why Gate</h2>
                             </div>
-                            <div class="col-lg-10 px-0" style="border-left: 1px solid #fff;">
-                                <div class="right">
-                                    <div class="para_wrapper">
-                                        <p>People + Process + Passion this is what makes Gate the trusted partner for customers across diverse industries to design and deliver products that make them leaders.</p>
-                                    </div>
-                                    <div class="accordian_parent">
-                                        <div class="accordion" id="accordionExample">
-                                            <div class="single_accordian_wrapper">
-                                                <div class="icon_wrapper">
-                                                    <img src="assets/images/icons/professional.svg" alt="" srcset="">
-                                                </div>
-                                                <div class="accordion-item">
-                                                  <h2 class="accordion-header" id="headingOne">
-                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                      Professional Team
+                        </div>
+                        <div class="col-lg-10 px-0" style="border-left: 1px solid #fff;">
+                            <div class="right">
+                                <div class="para_wrapper">
+                                    <p>People + Process + Passion this is what makes Gate the trusted partner for
+                                        customers
+                                        across diverse industries to design and deliver products that make them leaders.
+                                    </p>
+                                </div>
+                                <div class="accordian_parent">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="single_accordian_wrapper">
+                                            <div class="icon_wrapper">
+                                                <img src="assets/images/icons/professional.svg" alt="" srcset="">
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                        Professional Team
                                                     </button>
-                                                  </h2>
-                                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                      Global Team of Engineers passionate to solve complex engineering challenges and bring new concepts to realty.
+                                                        Global Team of Engineers passionate to solve complex engineering
+                                                        challenges and bring new concepts to realty.
                                                     </div>
-                                                  </div>
                                                 </div>
                                             </div>
-                                            <div class="single_accordian_wrapper">
-                                                <div class="icon_wrapper">
-                                                    <img src="assets/images/icons/partner.svg" alt="" srcset="">
-                                                </div>
-                                                <div class="accordion-item">
-                                                  <h2 class="accordion-header" id="headingTwo">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                      Own & Partner Managed Facilities
+                                        </div>
+                                        <div class="single_accordian_wrapper">
+                                            <div class="icon_wrapper">
+                                                <img src="assets/images/icons/partner.svg" alt="" srcset="">
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                        aria-expanded="false" aria-controls="collapseTwo">
+                                                        Own & Partner Managed Facilities
                                                     </button>
-                                                  </h2>
-                                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                      Global Team of Engineers passionate to solve complex engineering challenges and bring new concepts to realty.
+                                                        Global Team of Engineers passionate to solve complex engineering
+                                                        challenges and bring new concepts to realty.
                                                     </div>
-                                                  </div>
                                                 </div>
                                             </div>
-                                            <div class="single_accordian_wrapper">
-                                                <div class="icon_wrapper">
-                                                    <img src="assets/images/icons/supply-chain.svg" alt="" srcset="">
-                                                </div>
-                                                <div class="accordion-item">
-                                                  <h2 class="accordion-header" id="headingThree">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                      Unbreakable Supply Chain
+                                        </div>
+                                        <div class="single_accordian_wrapper">
+                                            <div class="icon_wrapper">
+                                                <img src="assets/images/icons/supply-chain.svg" alt="" srcset="">
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                        aria-expanded="false" aria-controls="collapseThree">
+                                                        Unbreakable Supply Chain
                                                     </button>
-                                                  </h2>
-                                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                      Global Team of Engineers passionate to solve complex engineering challenges and bring new concepts to realty.
+                                                        Global Team of Engineers passionate to solve complex engineering
+                                                        challenges and bring new concepts to realty.
                                                     </div>
-                                                  </div>
                                                 </div>
                                             </div>
-                                            <div class="single_accordian_wrapper">
-                                                <div class="icon_wrapper">
-                                                    <img src="assets/images/icons/proven.svg" alt="" srcset="">
-                                                </div>
-                                                <div class="accordion-item">
-                                                  <h2 class="accordion-header" id="headingFour">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                      Proven Process
+                                        </div>
+                                        <div class="single_accordian_wrapper">
+                                            <div class="icon_wrapper">
+                                                <img src="assets/images/icons/proven.svg" alt="" srcset="">
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingFour">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                        aria-expanded="false" aria-controls="collapseFour">
+                                                        Proven Process
                                                     </button>
-                                                  </h2>
-                                                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                </h2>
+                                                <div id="collapseFour" class="accordion-collapse collapse"
+                                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                      Global Team of Engineers passionate to solve complex engineering challenges and bring new concepts to realty.
+                                                        Global Team of Engineers passionate to solve complex engineering
+                                                        challenges and bring new concepts to realty.
                                                     </div>
-                                                  </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -509,6 +814,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
 
         <section class="section_5">
@@ -522,13 +828,16 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="right">
-                                <p>Gate is a Engineering Services and Manufacturing Solutions Provider that offers World Class Design Services and Scalable Precision manufacturing services to improve quality, reduce lead times and meet your budget.</p>
+                                <p>Gate is a Engineering Services and Manufacturing Solutions Provider that offers World
+                                    Class Design Services and Scalable Precision manufacturing services to improve
+                                    quality,
+                                    reduce lead times and meet your budget.</p>
                             </div>
                         </div>
                     </div>
                     <div class="bottom_content">
                         <div class="row">
-                            <div class="col-lg-3" style="padding-left: 0;">
+                            <div class="col-lg-3 mt-5 mt-lg-0 px-0 pt-5 pt-lg-0 pe-lg-3">
                                 <div class="card_wrapper">
                                     <div class="absolute_numbering">
                                         <h2>01</h2>
@@ -543,18 +852,25 @@
                                         <div class="strip_overlay">
                                             <div class="strip-wrapper">
                                                 <h4>Solar</h4>
-                                                <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                                                </svg></span>
+                                                <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26"
+                                                        height="26" fill="currentColor" class="bi bi-arrow-up-right"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                                                    </svg></span>
                                             </div>
                                             <div class="hidden_block">
-                                                <p>We work with leading racking, mounting and tracking companies to design, prototype, test and deliver world class products across residential and utility markets.</p>
+                                                <p>We work with leading racking, mounting and tracking companies to
+                                                    design,
+                                                    prototype, test and deliver world class products across residential
+                                                    and
+                                                    utility markets.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 mt-5 mt-lg-0 px-0 pt-5 pt-lg-0 pe-lg-3">
                                 <div class="card_wrapper">
                                     <div class="absolute_numbering">
                                         <h2>02</h2>
@@ -569,18 +885,23 @@
                                         <div class="strip_overlay">
                                             <div class="strip-wrapper">
                                                 <h4>Aerospace</h4>
-                                                <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                                                </svg></span>
+                                                <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26"
+                                                        height="26" fill="currentColor" class="bi bi-arrow-up-right"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                                                    </svg></span>
                                             </div>
                                             <div class="hidden_block">
-                                                <p>Gate is a strategic partner to design aircraft parts, casings and many critical components.</p>
+                                                <p>Gate is a strategic partner to design aircraft parts, casings and
+                                                    many
+                                                    critical components.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 mt-5 mt-lg-0 px-0 pt-5 pt-lg-0 pe-lg-3">
                                 <div class="card_wrapper">
                                     <div class="absolute_numbering">
                                         <h2>03</h2>
@@ -595,18 +916,24 @@
                                         <div class="strip_overlay">
                                             <div class="strip-wrapper">
                                                 <h4>Heavy Industrial</h4>
-                                                <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                                                </svg></span>
+                                                <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26"
+                                                        height="26" fill="currentColor" class="bi bi-arrow-up-right"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                                                    </svg></span>
                                             </div>
                                             <div class="hidden_block">
-                                                <p>We help design, engineer and manufacture parts and components across heavy industrial equipment from accessories, hydraulic lift mechanisms, material handling systems etc.</p>
+                                                <p>We help design, engineer and manufacture parts and components across
+                                                    heavy industrial equipment from accessories, hydraulic lift
+                                                    mechanisms,
+                                                    material handling systems etc.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3" style="padding-right: 0;">
+                            <div class="col-lg-3 mt-5 mt-lg-0 px-0 pt-5 pt-lg-0">
                                 <div class="card_wrapper">
                                     <div class="absolute_numbering">
                                         <h2>04</h2>
@@ -621,12 +948,17 @@
                                         <div class="strip_overlay">
                                             <div class="strip-wrapper">
                                                 <h4>Automotive</h4>
-                                                <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
-                                                </svg></span>
+                                                <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" width="26"
+                                                        height="26" fill="currentColor" class="bi bi-arrow-up-right"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                                                    </svg></span>
                                             </div>
                                             <div class="hidden_block">
-                                                <p>Gate works with leading Automotive part suppliers and OEM’s in engineering new parts and scaling their manufacturing capabilities.</p>
+                                                <p>Gate works with leading Automotive part suppliers and OEM’s in
+                                                    engineering new parts and scaling their manufacturing capabilities.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -652,7 +984,11 @@
                             <div class="right">
                                 <div class="para_wrapper">
                                     <h3>The Gate Effect</h3>
-                                    <p>Our numbers speak. With over a decade of experience, global presence, own manufacturing across India and the US and a talented and experience team, Gate solves complex engineering problems and delivers high quality products at globally competitive costs and unparalleled lead times.</p>
+                                    <p>Our numbers speak. With over a decade of experience, global presence, own
+                                        manufacturing across India and the US and a talented and experience team, Gate
+                                        solves complex engineering problems and delivers high quality products at
+                                        globally
+                                        competitive costs and unparalleled lead times.</p>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6 px-0">
@@ -661,14 +997,18 @@
                                                 <div class="content_wrapper">
                                                     <img src="assets/images/icons/icon-1.svg" alt="" srcset="">
                                                     <h3>70+</h3>
-                                                    <p>Dedicated Team of Engineers to solve critical engineering challenges and bring new products to life</p>
+                                                    <p>Dedicated Team of Engineers to solve critical engineering
+                                                        challenges
+                                                        and bring new products to life</p>
                                                 </div>
                                             </div>
                                             <div class="card_itself sixty">
                                                 <div class="content_wrapper">
                                                     <img src="assets/images/icons/icon-3.svg" alt="" srcset="">
                                                     <h3>40%</h3>
-                                                    <p>Dedicated Team of Engineers to solve critical engineering challenges and bring new products to life</p>
+                                                    <p>Dedicated Team of Engineers to solve critical engineering
+                                                        challenges
+                                                        and bring new products to life</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -679,14 +1019,18 @@
                                                 <div class="content_wrapper">
                                                     <img src="assets/images/icons/icon-2.svg" alt="" srcset="">
                                                     <h3>14</h3>
-                                                    <p>Dedicated Team of Engineers to solve critical engineering challenges and bring new products to life</p>
+                                                    <p>Dedicated Team of Engineers to solve critical engineering
+                                                        challenges
+                                                        and bring new products to life</p>
                                                 </div>
                                             </div>
                                             <div class="card_itself fourty">
                                                 <div class="content_wrapper">
                                                     <img src="assets/images/icons/icon-4.svg" alt="" srcset="">
                                                     <h3>3M+</h3>
-                                                    <p>Dedicated Team of Engineers to solve critical engineering challenges and bring new products to life</p>
+                                                    <p>Dedicated Team of Engineers to solve critical engineering
+                                                        challenges
+                                                        and bring new products to life</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -706,7 +1050,7 @@
                         <h2>Blogs</h2>
                     </div>
                     <div class="row pb-5">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 py-5 py-lg-0">
                             <div class="blog_wrapper">
                                 <div class="image_wrapper">
                                     <img src="assets/images/blogs/blog_1.jpg" alt="" srcset="">
@@ -716,11 +1060,12 @@
                                     </div>
                                 </div>
                                 <div class="blog_title">
-                                    <h4>Cost Savings of Over $250,000 for a Leading Solar Racking Manufacturer in USA</h4>
+                                    <h4>Cost Savings of Over $250,000 for a Leading Solar Racking Manufacturer in USA
+                                    </h4>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3" >
+                        <div class="col-lg-3 py-5 py-lg-0">
                             <div class="blog_wrapper">
                                 <div class="image_wrapper">
                                     <img src="assets/images/blogs/blog_2.jpg" alt="" srcset="">
@@ -730,11 +1075,12 @@
                                     </div>
                                 </div>
                                 <div class="blog_title">
-                                    <h4>Design Improvement and Manufacturing of Stainless Steel Facade for a Leading architect in the USA</h4>
+                                    <h4>Design Improvement and Manufacturing of Stainless Steel Facade for a Leading
+                                        architect in the USA</h4>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 py-5 py-lg-0">
                             <div class="blog_wrapper">
                                 <div class="image_wrapper">
                                     <img src="assets/images/blogs/blog_3.jpg" alt="" srcset="">
@@ -748,7 +1094,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 py-5 py-lg-0">
                             <div class="blog_wrapper">
                                 <div class="image_wrapper">
                                     <img src="assets/images/blogs/blog_4.jpg" alt="" srcset="">
@@ -780,7 +1126,7 @@
                                     <div class="col-lg-6">
                                         <div class="addres_line_1">
                                             <h6>Georgia</h6>
-                                            <p>5400 Laurel Springs Pkwy,  Ste 302 Suwanee, GA 30024</p>
+                                            <p>5400 Laurel Springs Pkwy, Ste 302 Suwanee, GA 30024</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
@@ -796,10 +1142,14 @@
                                         <div class="addres_line_2">
                                             <h6>Follow Us</h6>
                                             <ul class="icon_wrapper">
-                                                <li><a href=""><img src="assets/images/icons/twitter.svg" alt="" srcset=""></a></li>
-                                                <li><a href=""><img src="assets/images/icons/linkedin.svg" alt="" srcset=""></a></li>
-                                                <li><a href=""><img src="assets/images/icons/facebook.svg" alt="" srcset=""></a></li>
-                                                <li><a href=""><img src="assets/images/icons/pinterest.svg" alt="" srcset=""></a></li>
+                                                <li><a href=""><img src="assets/images/icons/twitter.svg" alt=""
+                                                            srcset=""></a></li>
+                                                <li><a href=""><img src="assets/images/icons/linkedin.svg" alt=""
+                                                            srcset=""></a></li>
+                                                <li><a href=""><img src="assets/images/icons/facebook.svg" alt=""
+                                                            srcset=""></a></li>
+                                                <li><a href=""><img src="assets/images/icons/pinterest.svg" alt=""
+                                                            srcset=""></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -812,7 +1162,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 mt-5 mt-lg-0">
                             <div class="right">
                                 <div class="form_wrapper">
                                     <h2>Call Us Or<br>
@@ -831,27 +1181,29 @@
                     </div>
                 </div>
             </div>
-        </section> 
-        
+        </section>
+
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                        <div class="left">
-                            <div class="logo_wrapper">
-                                <img src="assets/images/logo.png" alt="" srcset="">
-                            </div>
+                        <div class="left mb-4 mb-lg-0">
+                            <a href="/">
+                                <div class="logo_wrapper">
+                                    <img src="/assets/images/logo.png" alt="" srcset="">
+                                </div>
+                            </a>
                         </div>
-                     </div>
+                    </div>
                     <div class="col-lg-4">
                         <div class="middle">
                             <h6>Main Menu</h6>
                             <div class="nav_links_wrapper">
-                                <div class="link"><a href="">Home</a></div>
-                                <div class="link"><a href="">About Us</a></div>
+                                <div class="link"><a href="/">Home</a></div>
+                                <div class="link"><a href="/pages/about-us/">About Us</a></div>
                                 <div class="link"><a href="/pages/services/">Services</a></div>
-                                <div class="link"><a href="">Resources</a></div>
-                                <div class="link"><a href="">Blogs</a></div>
+                                <div class="link"><a href="#">Resources</a></div>
+                                <div class="link"><a href="#">Blogs</a></div>
                             </div>
                         </div>
                     </div>
@@ -867,18 +1219,15 @@
                     </div>
                 </div>
                 <div class="bottom">
-                    <p>Copyright @ <script>document.write(new Date().getFullYear())</script> GATE Corporation. All rights reserved</p>
+                    <p>Copyright @
+                        <script>document.write(new Date().getFullYear())</script> GATE Corporation. All rights reserved
+                    </p>
                     <p>Privacy policy | Terms of use</p>
                 </div>
             </div>
-        </footer>         
+        </footer>
 
     </div>
-    
-    
-
-
-
 
 
 
@@ -896,37 +1245,45 @@
         let timeoutIds = [];
 
         function showMenu() {
-        clearTimeout(timeoutIds[this.dataset.menuIndex]);
+            clearTimeout(timeoutIds[this.dataset.menuIndex]);
 
-        // Hide other menu items after a slight delay
-        timeoutIds.forEach((timeoutId, index) => {
-            if (index !== parseInt(this.dataset.menuIndex)) {
-            clearTimeout(timeoutId);
-            menuItems[index].classList.remove('show');
-            }
-        });
+            // Hide other menu items after a slight delay
+            timeoutIds.forEach((timeoutId, index) => {
+                if (index !== parseInt(this.dataset.menuIndex)) {
+                    clearTimeout(timeoutId);
+                    menuItems[index].classList.remove('show');
+                }
+            });
 
-        this.classList.add('show');
+            this.classList.add('show');
         }
 
         function hideMenu() {
-        const menuIndex = this.dataset.menuIndex;
-        clearTimeout(timeoutIds[menuIndex]);
+            const menuIndex = this.dataset.menuIndex;
+            clearTimeout(timeoutIds[menuIndex]);
 
-        timeoutIds[menuIndex] = setTimeout(() => {
-            this.classList.remove('show');
-        }, 300);
+            timeoutIds[menuIndex] = setTimeout(() => {
+                this.classList.remove('show');
+            }, 300);
         }
 
         menuItems.forEach((menuItem, index) => {
-        menuItem.dataset.menuIndex = index;
-        menuItem.addEventListener('mouseenter', showMenu);
-        menuItem.addEventListener('mouseleave', hideMenu);
+            menuItem.dataset.menuIndex = index;
+            menuItem.addEventListener('mouseenter', showMenu);
+            menuItem.addEventListener('mouseleave', hideMenu);
         });
 
+        const navIcon = document.querySelector(".nav_bars_icon > a.bars");
+        if (navIcon) {
+            navIcon.addEventListener("click", evt => {
+                evt.currentTarget.parentElement.classList.toggle("active");
+                document.querySelector("body").style.overflow = document.querySelector("body").style.overflow === "hidden" ? "auto" : "hidden";
+            });
+        }
 
 
 
     </script>
 </body>
+
 </html>
