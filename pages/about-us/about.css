@@ -46,7 +46,7 @@
 
 .mission_section {
     position: relative;
-    padding-block: 150px 100px;
+    padding-block: 100px;
     background-color: var(--changing-variable-background-color);
 }
 
@@ -57,6 +57,11 @@
     bottom: auto;
     transform: translateY(-50%);
     background: linear-gradient(to bottom, var(--changing-variable-background-color) 50%, #fff 50%);
+}
+
+.mission_section .bw_boxes.right {
+    right: 40px;
+    left: auto;
 }
 
 .history_section {
@@ -72,7 +77,7 @@
 .history_section .mySwiper .swiper-slide {
     width: 100%;
     max-width: 400px;
-    height: 100%;
+    height: auto;
     padding: 40px;
     padding-bottom: 20px;
     position: relative;
@@ -80,7 +85,7 @@
     border-bottom: 2px solid #000;
 }
 
-.history_section .mySwiper .swiper-slide::after {
+.history_section .mySwiper .swiper-slide .slide_wrapper::after {
     content: "";
     width: 20px;
     height: 20px;
@@ -92,7 +97,7 @@
     background-color: var(--changing-variable-background-color);
 }
 
-.history_section .mySwiper .swiper-slide h2.stroke {
+.history_section .mySwiper .swiper-slide .slide_wrapper h2.stroke {
     color: transparent;
     font-family: "carisma_gothic700_bold";
     font-size: clamp(40px, 6vw, 90px);
@@ -101,7 +106,7 @@
 }
 
 .team_section {
-    padding-bottom: 150px;
+    padding-block: 100px 150px;
     color: #000;
 }
 
@@ -256,4 +261,8 @@
 .bgImg_section .bgSwiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: transparent;
     outline: 1px solid #121c22;
+}
+
+.main_spacer {
+    padding-block: 100px;
 }
