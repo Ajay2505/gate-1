@@ -60,6 +60,8 @@
   --heading_sec: clamp(25px, 6vw, 40px);
   --heading_ter: clamp(20px, 6vw, 30px);
   --heading-color: #777777;
+  --font-carisma-500: "carisma_gothic500_medium";
+  --font-carisma-600: "carisma_gothic600_demibold";
 }
 
 $font-carisma-300: "carisma_gothic300_light";
@@ -1476,4 +1478,8 @@ section.features {
       }
     }
   }
+}
+
+.blue_color {
+  color: var(--changing-variable-background-color);
 }
