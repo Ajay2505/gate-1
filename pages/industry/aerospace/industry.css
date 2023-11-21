@@ -206,3 +206,15 @@ header {
 .offers_section .cards > div p {
     margin: 0;
 }
+
+.section2 .liner {
+    border: none;
+}
+
+.main_spacer_bottom {
+    padding-bottom: 100px;
+}
+
+.row-gap-5 {
+    row-gap: 50px;
+}
