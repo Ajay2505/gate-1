@@ -59,7 +59,7 @@
 }
 
 .blogs_section .blog .fulldate_block p {
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
 }
 
@@ -70,7 +70,6 @@
 .blogs_section .blog .blog_title:hover {
     color: var(--changing-variable-background-color);
 }
-
 
 .bw_boxes {
     width: 100px;    
@@ -88,4 +87,12 @@
 
 .main_spacer_top {
     padding-top: 100px;
+}
+
+.togglers .btn {
+    transition: color .2s ease-in, box-shadow .3s ease-in;    
+}
+
+.togglers .active {
+    color: var(--changing-variable-background-color);
 }

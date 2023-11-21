@@ -1382,4 +1382,12 @@ section.features .container .checks .check .icon_wrapper img {
 
 .blue_color {
   color: var(--changing-variable-background-color);
+}
+
+.font-500 {
+  font-family: var(--font-carisma-500);
+}
+
+.font-600 {
+  font-family: var(--font-carisma-600);
 }/*# sourceMappingURL=style.css.map */

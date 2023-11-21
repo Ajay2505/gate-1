@@ -634,11 +634,20 @@
     <section class="blogs_section main_spacer">
         <div class="main_spacer_top"></div>
         <div class="container">
-
+            <div class="d-flex justify-content-between flex-lg-nowrap flex-wrap">
+                <h4 class="font-600">Blogs</h4>
+                <div id="blogTogglers" class="togglers">
+                    <button data-cat="all" class="btn active font-600">All</button>
+                    <button data-cat="Resources" class="btn font-600">Resources</button>
+                    <button data-cat="Blog" class="btn font-600">Blog</button>
+                    <button data-cat="News" class="btn font-600">News</button>
+                </div>
+            </div>
+            <br>
             <div class="blogs_wrapper">
                 <div class="row row-gap-5">
-                    <div class="col-lg-3 col-md-6">
-                        <a href="#" class="blog">
+                    <div blog-cat="Resources" class="col-lg-3 col-md-6 blog">
+                        <a href="#">
                             <div class="img_wrapper mb-3 position-relative">
                                 <div class="overflow-hidden">
                                     <div class="date_block">
@@ -651,14 +660,14 @@
                                 </div>
                             </div>
                             <div class="content_wrapper">
-                                <p class="blue_color fw-bold">. Industry</p>
+                                <p class="blue_color fw-bold">. Resources</p>
                                 <h5 class="blog_title">Creation of industrial projects around the world</h5>
                             </div>
                         </a>
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <a href="#" class="blog">
+                    <div blog-cat="Blog" class="col-lg-3 col-md-6 blog">
+                        <a href="#">
                             <div class="img_wrapper mb-3 position-relative">
                                 <div class="overflow-hidden">
                                     <div class="date_block">
@@ -671,34 +680,14 @@
                                 </div>
                             </div>
                             <div class="content_wrapper">
-                                <p class="blue_color fw-bold">. Industry</p>
+                                <p class="blue_color fw-bold">. Blog</p>
                                 <h5 class="blog_title">Creation of industrial projects around the world</h5>
                             </div>
                         </a>
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <a href="#" class="blog">
-                            <div class="img_wrapper mb-3 position-relative">
-                                <div class="overflow-hidden">
-                                    <div class="date_block">
-                                        <h2 class="m-0">02</h2>
-                                    </div>
-                                    <div class="fulldate_block">
-                                        <p class="m-0">Aug '22</p>
-                                    </div>
-                                    <img src="https://demo.artureanec.com/themes/industrium/wp-content/uploads/2022/08/florian-roost-sPLXysDqXKA-unsplash-480x600.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="content_wrapper">
-                                <p class="blue_color fw-bold">. Industry</p>
-                                <h5 class="blog_title">Creation of industrial projects around the world</h5>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6">
-                        <a href="#" class="blog">
+                    <div blog-cat="News" class="col-lg-3 col-md-6 blog">
+                        <a href="#">
                             <div class="img_wrapper mb-3 position-relative">
                                 <div class="overflow-hidden">
                                     <div class="date_block">
@@ -711,14 +700,34 @@
                                 </div>
                             </div>
                             <div class="content_wrapper">
-                                <p class="blue_color fw-bold">. Industry</p>
+                                <p class="blue_color fw-bold">. News</p>
                                 <h5 class="blog_title">Creation of industrial projects around the world</h5>
                             </div>
                         </a>
                     </div>
 
-                    <div class="col-lg-3 col-md-6">
-                        <a href="#" class="blog">
+                    <div blog-cat="Resources" class="col-lg-3 col-md-6 blog">
+                        <a href="#">
+                            <div class="img_wrapper mb-3 position-relative">
+                                <div class="overflow-hidden">
+                                    <div class="date_block">
+                                        <h2 class="m-0">02</h2>
+                                    </div>
+                                    <div class="fulldate_block">
+                                        <p class="m-0">Aug '22</p>
+                                    </div>
+                                    <img src="https://demo.artureanec.com/themes/industrium/wp-content/uploads/2022/08/florian-roost-sPLXysDqXKA-unsplash-480x600.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="content_wrapper">
+                                <p class="blue_color fw-bold">. Resources</p>
+                                <h5 class="blog_title">Creation of industrial projects around the world</h5>
+                            </div>
+                        </a>
+                    </div>                   
+
+                    <div blog-cat="Blog" class="col-lg-3 col-md-6 blog">
+                        <a href="#">
                             <div class="img_wrapper mb-3 position-relative">
                                 <div class="overflow-hidden">
                                     <div class="date_block">
@@ -731,7 +740,7 @@
                                 </div>
                             </div>
                             <div class="content_wrapper">
-                                <p class="blue_color fw-bold">. Industry</p>
+                                <p class="blue_color fw-bold">. Blog</p>
                                 <h5 class="blog_title">Creation of industrial projects around the world</h5>
                             </div>
                         </a>
@@ -897,6 +906,32 @@
             navIcon.addEventListener("click", evt => {
                 evt.currentTarget.parentElement.classList.toggle("active");
                 document.querySelector("body").style.overflow = document.querySelector("body").style.overflow === "hidden" ? "auto" : "hidden";
+            });
+        }
+    </script>
+    <script>
+        const togglers = document.querySelectorAll("#blogTogglers button");
+        const blogs = document.querySelectorAll(".blogs_wrapper .blog");
+        if (togglers && blogs && blogs.length) {
+            togglers.forEach(toggler => {
+                toggler.addEventListener("click", evt => {
+                    const activeBtn = document.querySelector("#blogTogglers button.active");
+                    if (activeBtn) {
+                        activeBtn.classList.remove("active");
+                    }
+                    evt.currentTarget.classList.add("active");
+                    const activeCat = evt.currentTarget.getAttribute("data-cat");
+                    setActiveBlogs(activeCat);
+                });
+            });
+        }
+        function setActiveBlogs(cat) {
+            blogs.forEach(blog => {
+                if (cat.toLowerCase() === "all" || cat.toLowerCase() === blog.getAttribute("blog-cat").toLowerCase()) {
+                    blog.classList.remove("d-none");
+                } else {
+                    blog.classList.add("d-none");
+                }
             });
         }
     </script>
