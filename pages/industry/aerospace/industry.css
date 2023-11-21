@@ -1,0 +1,208 @@
+
+body {
+    color: #000;
+}
+
+header {
+    color: #fff;
+}
+
+.main_spacer {
+    padding-block: 100px;
+}
+
+.hstack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.jus-sa {
+    justify-content: space-around;
+}
+
+.jus-sb {
+    justify-content: space-between;
+}
+
+.bg_gray {
+    background-color: #ddd;
+}
+
+.explore_btn {
+    background-color: #085dbf;
+    font-weight: 500;
+    color: #fff;
+    white-space: nowrap;
+    padding: 7px 16px;
+    width: -moz-fit-content;
+    width: fit-content;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.main_section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    background-image: url("https://assets.website-files.com/642ecc138d1257ed9c748c87/644be56618475727b613b705_Banner%20Home%201%20(1).webp");
+    background-blend-mode: overlay;
+}
+
+.main_section h1 {
+    color: #fff;
+}
+
+.counter_section .img_wrapper {
+    max-width: 350px;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    gap: 30px;
+    grid-auto-flow: row;;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid > .ccard {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    align-items: flex-end;
+    min-height: 250px;
+    background-size: cover;
+    /* border-radius: 5px; */
+    background-repeat: no-repeat;
+}
+
+.grid > .ccard::before,
+.grid > .ccard::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 7px;
+    transition: width .3s ease-in-out;
+    background-color: var(--changing-variable-background-color);
+}
+
+.grid > .ccard::after {
+    width: 0;
+    background-color: #000;
+}
+
+.grid > .ccard:hover::after {
+    width: 100%;
+}
+
+.grid > .ccard {
+    transition: color .2s ease-in-out;
+    color: #fff;
+}
+
+.grid > .ccard .icon_wrapper {
+    flex-shrink: 0;
+    transform: rotate(45deg);
+    transition: transform .3s ease-in-out;
+}
+
+.grid > .ccard:hover {
+    /* color: var(--changing-variable-background-color); */
+}
+
+.grid > .ccard:hover .icon_wrapper {
+    transform: rotate(0);
+}
+
+.points_section .point_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-block: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.points_section .point_wrapper p {
+    margin: 0;
+}
+
+ .point {
+    max-width: 30px;
+    min-width: 30px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 2px solid var(--changing-variable-background-color);
+}
+
+.points_section .point_wrapper .point img {
+    width: 100%;
+}
+
+.more_points_section .box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 35px 20px;
+}
+
+.more_points_section .box p {
+    margin: 0;
+}
+
+.more_points_section .box:first-child {
+    background-color: #085dbf44;
+}
+
+.more_points_section .box:nth-child(2) {
+    background-color: #085dbf22;
+}
+
+
+.more_points_section .box:nth-child(3) {
+    background-color: #085dbf11;
+}
+
+.more_points_section .box:not(:first-child) {
+    margin-top: 20px;
+}
+
+.half_bg_section {
+    background: linear-gradient(0deg, #fff 50%, #ddd 50%);
+}
+
+.half_bg_section .img_wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.offers_section .cards {
+    display: grid;
+    gap: 30px 40px;
+    grid-auto-flow: row;;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.offers_section .cards > div {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    border: 2px solid var(--changing-variable-background-color);
+}
+
+.offers_section .cards > div p {
+    margin: 0;
+}
