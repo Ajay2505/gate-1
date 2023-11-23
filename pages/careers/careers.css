@@ -110,3 +110,7 @@
     opacity: 1;
     filter: none;
 }
+
+.mySwiper .swiper-wrapper {
+    transition-timing-function: linear;
+}

@@ -1491,3 +1491,8 @@ section.features {
 .font-600 {
   font-family: var(--font-carisma-600);
 }
+
+body *::selection {
+  color: #fff;
+  background-color: var(--changing-variable-background-color);
+}

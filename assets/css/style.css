@@ -1390,4 +1390,14 @@ section.features .container .checks .check .icon_wrapper img {
 
 .font-600 {
   font-family: var(--font-carisma-600);
+}
+
+body *::-moz-selection {
+  color: #fff;
+  background-color: var(--changing-variable-background-color);
+}
+
+body *::selection {
+  color: #fff;
+  background-color: var(--changing-variable-background-color);
 }/*# sourceMappingURL=style.css.map */

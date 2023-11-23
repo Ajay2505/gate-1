@@ -1134,8 +1134,11 @@
             slidesPerView: "auto",
             loop: true,
             spaceBetween: 30,
-            // autoplay: true
-            // simulateTouch: false
+            speed: 4000,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
         });
         const navIcon = document.querySelector(".nav_bars_icon > a.bars");
         if (navIcon) {
