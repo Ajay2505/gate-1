@@ -1400,4 +1400,8 @@ body *::-moz-selection {
 body *::selection {
   color: #fff;
   background-color: var(--changing-variable-background-color);
+}
+
+.justify-content-center {
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

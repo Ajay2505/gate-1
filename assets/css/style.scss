@@ -1493,6 +1493,10 @@ section.features {
 }
 
 body *::selection {
-  color: #fff;
+  color: #fff;  
   background-color: var(--changing-variable-background-color);
+}
+
+.justify-content-center {
+  justify-content: center;
 }
