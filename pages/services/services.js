@@ -146,7 +146,7 @@ document.querySelector(".accTwoBtn").addEventListener("click", (evt) => {
     }
 });
 
-document.querySelector(".features_copy_btn").addEventListener("click", (evt) => {
+document.querySelector(".features_copy_btn")?.addEventListener("click", (evt) => {
     const checks = document.querySelectorAll(".features.copy .checks");
     const hiddenChecks = document.querySelectorAll(".features.copy .checks .check.d-none");
     if (hiddenChecks?.length) {

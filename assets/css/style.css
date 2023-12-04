@@ -1408,9 +1408,18 @@ body *::selection {
 
 .row-gap-5 {
   row-gap: 30px;
-}/*# sourceMappingURL=style.css.map */
+}
 
 section#industrial .container,
-section#contract .container  {
+section#contract .container,
+div#product {
   border-block: 1px solid #cfcfcf;
 }
+
+#cad-cam .container {
+  border-top: 1px solid #cfcfcf;
+}
+
+.main_spacer_bottom {
+  padding-bottom: 100px;
+}/*# sourceMappingURL=style.css.map */
