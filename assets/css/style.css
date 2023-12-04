@@ -1409,3 +1409,8 @@ body *::selection {
 .row-gap-5 {
   row-gap: 30px;
 }/*# sourceMappingURL=style.css.map */
+
+section#industrial .container,
+section#contract .container  {
+  border-block: 1px solid #cfcfcf;
+}

@@ -78,21 +78,23 @@
     width: 100%;
     max-width: 400px;
     height: auto;
+    /* border: 1px solid var(--changing-variable-background-color); */
     padding: 40px;
     padding-bottom: 20px;
     position: relative;
     margin-bottom: 20px;
-    border-bottom: 2px solid #000;
+    border: 2px solid var(--changing-variable-background-color);
+    border-right: none;
 }
 
 .values_section .mySwiper .swiper-slide .slide_wrapper::after {
     content: "";
     width: 20px;
     height: 20px;
-    transform: translateY(50%);
+    transform: translate(-50%, 50%);
     border-radius: 50%;
     bottom: 0;
-    left: 30px;
+    left: 0;
     position: absolute;
     background-color: var(--changing-variable-background-color);
 }
@@ -117,6 +119,10 @@
     align-items: center;
     justify-content: flex-end;
     gap: 0 10px;
+}
+
+.values_section .values_pagination > .btn {
+    flex-shrink: 0;
 }
 
 .values_section .values_pagination .btn {
