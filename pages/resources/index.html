@@ -674,7 +674,7 @@
             <div class="blogs_wrapper">
                 <div class="row row-gap-5">
                     <div blog-cat="Resources" class="col-lg-3 col-md-6 blog">
-                        <a href="#">
+                        <a class="underline_wrapper" href="#">
                             <div class="img_wrapper mb-3 position-relative">
                                 <div class="overflow-hidden">
                                     <div class="date_block">
@@ -688,13 +688,13 @@
                             </div>
                             <div class="content_wrapper">
                                 <p class="blue_color fw-bold">. Resources</p>
-                                <h5 class="blog_title">Creation of industrial projects around the world</h5>
+                                <h5 class="blog_title underline">Creation of industrial projects around the world</h5>
                             </div>
                         </a>
                     </div>
 
                     <div blog-cat="Blog" class="col-lg-3 col-md-6 blog">
-                        <a href="#">
+                        <a class="underline_wrapper" href="#">
                             <div class="img_wrapper mb-3 position-relative">
                                 <div class="overflow-hidden">
                                     <div class="date_block">
@@ -708,13 +708,13 @@
                             </div>
                             <div class="content_wrapper">
                                 <p class="blue_color fw-bold">. Blog</p>
-                                <h5 class="blog_title">Creation of industrial projects around the world</h5>
+                                <h5 class="blog_title underline">Creation of industrial projects around the world</h5>
                             </div>
                         </a>
                     </div>
 
                     <div blog-cat="News" class="col-lg-3 col-md-6 blog">
-                        <a href="#">
+                        <a class="underline_wrapper" href="#">
                             <div class="img_wrapper mb-3 position-relative">
                                 <div class="overflow-hidden">
                                     <div class="date_block">
@@ -728,13 +728,13 @@
                             </div>
                             <div class="content_wrapper">
                                 <p class="blue_color fw-bold">. News</p>
-                                <h5 class="blog_title">Creation of industrial projects around the world</h5>
+                                <h5 class="blog_title underline">Creation of industrial projects around the world</h5>
                             </div>
                         </a>
                     </div>
 
                     <div blog-cat="Resources" class="col-lg-3 col-md-6 blog">
-                        <a href="#">
+                        <a class="underline_wrapper" href="#">
                             <div class="img_wrapper mb-3 position-relative">
                                 <div class="overflow-hidden">
                                     <div class="date_block">
@@ -748,13 +748,13 @@
                             </div>
                             <div class="content_wrapper">
                                 <p class="blue_color fw-bold">. Resources</p>
-                                <h5 class="blog_title">Creation of industrial projects around the world</h5>
+                                <h5 class="blog_title underline">Creation of industrial projects around the world</h5>
                             </div>
                         </a>
                     </div>                   
 
                     <div blog-cat="Blog" class="col-lg-3 col-md-6 blog">
-                        <a href="#">
+                        <a class="underline_wrapper" href="#">
                             <div class="img_wrapper mb-3 position-relative">
                                 <div class="overflow-hidden">
                                     <div class="date_block">
@@ -768,7 +768,7 @@
                             </div>
                             <div class="content_wrapper">
                                 <p class="blue_color fw-bold">. Blog</p>
-                                <h5 class="blog_title">Creation of industrial projects around the world</h5>
+                                <h5 class="blog_title underline">Creation of industrial projects around the world</h5>
                             </div>
                         </a>
                     </div>
@@ -958,6 +958,29 @@
                     blog.classList.remove("d-none");
                 } else {
                     blog.classList.add("d-none");
+                }
+            });
+        }
+
+        const underLineWrappers = document.querySelectorAll(".underline_wrapper");
+        if (underLineWrappers) {
+            underLineWrappers.forEach(wrapper => {
+                const line = wrapper.querySelector(".underline");
+                if (line) {
+                    let timeStamp = "";
+                    wrapper.addEventListener("mouseenter", () => {
+                        timeStamp = Date.now();
+                        line.classList.add("active");
+                    });
+                    wrapper.addEventListener("mouseleave", () => {
+                        if ((Date.now() - timeStamp) < 400) {
+                            setTimeout(() => {
+                                line.classList.remove("active");
+                            }, 400 + Date.now() - timeStamp)
+                        } else {
+                            line.classList.remove("active");
+                        }
+                    });
                 }
             });
         }
