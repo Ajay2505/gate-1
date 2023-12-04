@@ -326,3 +326,24 @@
     font-size: initial;
     margin-bottom: 7px;
 }
+
+.cap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .capabilities .cap .absolute_block {
+        right: 0;
+        bottom: 0;
+        background-color: var(--changing-variable-background-color);
+    }   
+    .capabilities .cap .absolute_block .hidden_block {
+        margin-top: 10px;
+    }
+    .capabilities .cap .absolute_block .hidden_block * {
+        font-size: initial;
+        margin-bottom: 7px;
+    }
+}
