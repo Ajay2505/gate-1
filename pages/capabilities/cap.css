@@ -13,6 +13,10 @@
     background: linear-gradient(to top, var(--changing-variable-background-color) 50%, #fff 50%);
 }
 
+.bw_boxes.rev{
+    background: linear-gradient(to bottom, var(--changing-variable-background-color) 50%, #fff 50%);
+}
+
 .main_section {
     width: 100%;
     height: 100vh;
@@ -46,7 +50,7 @@
 
 .mission_section {
     position: relative;
-    padding-block: 100px;
+    padding-block: 150px 100px;
     background-color: var(--changing-variable-background-color);
 }
 
@@ -59,25 +63,20 @@
     background: linear-gradient(to bottom, var(--changing-variable-background-color) 50%, #fff 50%);
 }
 
-.mission_section .bw_boxes.right {
-    right: 40px;
-    left: auto;
-}
-
-.values_section {
+.history_section {
     color: #000;
     padding-block: 150px;
 }
 
-.values_section .mySwiper {
+.history_section .mySwiper {
     width: 100%;
     height: 100%;
 }
 
-.values_section .mySwiper .swiper-slide {
+.history_section .mySwiper .swiper-slide {
     width: 100%;
     max-width: 400px;
-    height: auto;
+    height: 100%;
     padding: 40px;
     padding-bottom: 20px;
     position: relative;
@@ -85,7 +84,7 @@
     border-bottom: 2px solid #000;
 }
 
-.values_section .mySwiper .swiper-slide .slide_wrapper::after {
+.history_section .mySwiper .swiper-slide::after {
     content: "";
     width: 20px;
     height: 20px;
@@ -97,7 +96,7 @@
     background-color: var(--changing-variable-background-color);
 }
 
-.values_section .mySwiper .swiper-slide .slide_wrapper h2.stroke {
+.history_section .mySwiper .swiper-slide h2.stroke {
     color: transparent;
     font-family: "carisma_gothic700_bold";
     font-size: clamp(40px, 6vw, 90px);
@@ -105,27 +104,8 @@
     -webkit-text-stroke-color: var(--changing-variable-background-color);
 }
 
-.values_section .mySwiper .swiper-slide .slide_wrapper .icon_wrapper {
-    max-width: 70px;
-    margin: 0 auto 20px auto;
-}
-
-.values_section .values_pagination {
-    display: flex;
-    width: fit-content;
-    margin-left: auto;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 0 10px;
-}
-
-.values_section .values_pagination .btn {
-    color: #fff;
-    background-color: var(--changing-variable-background-color);
-}
-
 .team_section {
-    padding-block: 100px 150px;
+    padding-bottom: 150px;
     color: #000;
 }
 
@@ -222,7 +202,7 @@
 .bgImg_section .container {
     background-attachment: fixed;
     background-size: cover;
-    background-image: url("/assets/images/bg-img-about.jpeg");
+    background-image: url("https://g2h4v2c9.stackpathcdn.com/themes/industrium/wp-content/uploads/2022/08/alain-pham-P_qvsF7Yodw-unsplash.jpg");
     padding-top: 150px;
     padding-right: 50px;
     display: flex;
@@ -282,29 +262,67 @@
     outline: 1px solid #121c22;
 }
 
+.section_2.contact h1 {
+    font-size: clamp(40px, 8vw, 140px);
+    color: transparent;
+    /* -webkit-text-stroke-color: #fff; */
+}
+
 .main_spacer {
-    padding-block: 100px;
+    padding-block: 130px;
 }
 
-.row-gap-5 {
-    row-gap: 40px;
+.map_section .map {
+    filter: grayscale(1) brightness(.8);
 }
 
+.capabilities .cap .img_wrapper img {
+    object-fit: cover;
+}
 
-@media only screen and (max-width: 768px) {
-    .team_section .card_wrapper .img_wrapper .links_block {
-        transform: translate(0);
-    }
-    .team_section .card_wrapper .img_wrapper .links_block a {
-        color: #fff;
-    }
-    .team_section .card_wrapper .img_wrapper img {
-        filter: none;
-    }
-    .bgImg_section .content_wrapper {
-        padding: 20px;
-    }
-    .bgImg_section .swiper-slide {
-        padding-block: 20px;
-    }
+.capabilities .cap .absolute_block {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 30%;
+    padding: 20px;
+    max-height: 70%;
+    background-color: #5c5c5c;
+    overflow-y: auto;
+    transition: background-color .2s ease-in-out, right .3s ease-in-out, bottom .3s ease-in-out;
+}
+
+.capabilities .cap:hover .absolute_block {
+    /* padding-right: 30%; */
+    right: 0;
+    bottom: 0;
+    background-color: var(--changing-variable-background-color);
+}
+
+.capabilities .cap .absolute_block .icon {
+    transition: transform .3s ease-in-out;
+}
+
+.capabilities .cap:hover .absolute_block .icon {
+    transform: rotate(90deg);
+}
+
+.capabilities .cap .absolute_block .hidden_block {
+    padding-right: 20%;    
+    transition: margin-top .3s ease-in-out;
+}
+
+.capabilities .cap:hover .absolute_block .hidden_block {
+    margin-top: 10px;
+}
+
+.capabilities .cap .absolute_block .hidden_block * {
+    font-size: 0;
+    margin: 0;
+    transition: font-size .3s ease-in-out, margin-bottom .3s ease-in-out;;
+}
+
+.capabilities .cap:hover .absolute_block .hidden_block * {
+    font-size: initial;
+    margin-bottom: 7px;
 }
