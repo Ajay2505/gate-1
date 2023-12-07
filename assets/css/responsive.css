@@ -47,6 +47,16 @@
     .grid, .offers_section .cards {
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     }
+    .servicesSwiper .swiper-slide:hover .img_wrapper {
+        transform: none;
+    }
+    .servicesSwiper .swiper-slide .img_wrapper::before {
+        content: none;
+    }
+    .servicesSwiper .swiper-slide .img_wrapper::after {
+        opacity: 1;
+        right: 0;
+    }
 }
 
 @media only screen and (max-width: 500px) {

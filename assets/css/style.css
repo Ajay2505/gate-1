@@ -1473,13 +1473,11 @@ div#product {
 
 .servicesSwiper .swiper-slide .img_wrapper::after {
   background-color: rgba(0, 0, 0, 0.35);
-  opacity: 1;
   right: 100%;
   transition: right 0.3s ease-in-out;
 }
 
 .servicesSwiper .swiper-slide:hover .img_wrapper::after {
-  opacity: 1;
   right: 0;
 }
 
