@@ -182,3 +182,30 @@ document.querySelector(".faq_more").addEventListener("click", (evt) => {
         evt.target.innerText = "explore more";
     }
 });
+
+const swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    speed: 1000,
+    effect: 'easeIn',
+    spaceBetween: 2,
+    allowTouchMove: false,
+    breakpoints: {
+        480: {
+            slidesPerView: 1,          
+        },
+        640: {
+            slidesPerView: 2,          
+        },
+        1200: {
+            slidesPerView: 3
+        }
+    }
+});
