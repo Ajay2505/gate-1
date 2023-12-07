@@ -1549,7 +1549,6 @@ div#product {
 
 .servicesSwiper .swiper-slide:hover .img_wrapper {
   transform: scale(1.2);
-  // border-right: 1px solid $background-color-unedited;
 }
 
 .servicesSwiper .swiper-slide .img_wrapper {
@@ -1590,11 +1589,6 @@ div#product {
   right: 0;
   padding: 10px 15px;
   transition: color .2s ease-in-out, transform .2s ease-in-out;
-}
-
-.servicesSwiper .swiper-slide:hover .content_wrapper {
-  // color: #fff;
-  // transform: scaleY(1.2);
 }
 
 #cad-cam {
