@@ -176,6 +176,10 @@ header {
     background-color: #085dbf11;
 }
 
+.more_points_section .box:nth-child(4) {
+    background-color: #085dbf11;
+}
+
 .more_points_section .box:not(:first-child) {
     margin-top: 20px;
 }
@@ -218,3 +222,4 @@ header {
 .row-gap-5 {
     row-gap: 50px;
 }
+

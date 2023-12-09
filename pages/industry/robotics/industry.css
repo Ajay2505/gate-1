@@ -164,15 +164,22 @@ header {
 }
 
 .more_points_section .box:first-child {
-    background-color: #085dbf44;
+    background-color: #085dbf6a;
 }
 
 .more_points_section .box:nth-child(2) {
+    background-color: #085dbf60;
+}
+
+.more_points_section .box:nth-child(3) {
+    background-color: #085dbf34;
+}
+
+.more_points_section .box:nth-child(4) {
     background-color: #085dbf22;
 }
 
-
-.more_points_section .box:nth-child(3) {
+.more_points_section .box:nth-child(5) {
     background-color: #085dbf11;
 }
 
