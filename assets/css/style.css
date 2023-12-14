@@ -692,7 +692,6 @@ header .nav_lower ul.lower li.menu_itself.show .menu__wrapper {
 }
 .section_6 .line_adj .sec_6_content_wrapper .right .para_wrapper {
   padding: 50px;
-  border-bottom: 1px solid #cfcfcf;
 }
 .section_6 .line_adj .sec_6_content_wrapper .right .para_wrapper h3 {
   color: #5c5c5c;
@@ -958,6 +957,7 @@ footer .bottom {
   display: flex;
   justify-content: space-between;
   padding-top: 100px;
+  flex-wrap: wrap;
 }
 
 .section2 {
@@ -1416,6 +1416,10 @@ div#product {
   border-block: 1px solid #cfcfcf;
 }
 
+#cad-cam {
+  overflow-x: hidden;
+}
+
 #cad-cam .container {
   border-top: 1px solid #cfcfcf;
   border-inline: 1px solid #cfcfcf;
@@ -1497,4 +1501,8 @@ div#product {
 #cad-cam {
   background-color: #085dbf;
   color: #fff;
+}
+
+footer .left .logo_wrapper {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=style.css.map */

@@ -37,6 +37,11 @@ if (navIcon) {
         document.querySelector("body").style.overflow = document.querySelector("body").style.overflow === "hidden" ? "auto" : "hidden";
     });
 }
+window.addEventListener("resize", evt => {
+    if (navIcon && navIcon.parentElement?.classList.contains("active")) {
+        navIcon.click();
+    }
+});
 
 document.querySelector(".explore_cards").addEventListener("click", (evt) => {
     const hiddenCardsRow = document.querySelector(".section2 .content_wrapper .cards.d-none");

@@ -38,6 +38,9 @@
 }
 
 @media only screen and (max-width:767px) {
+    .margin-0 {
+        margin: 0;
+    }
     .section_2 .sec_2_content_wrapper h1{
         font-size: clamp(40px, 18.5vw, 100px);
     }
@@ -57,11 +60,46 @@
         opacity: 1;
         right: 0;
     }
+    .section_2 .sec_2_content_wrapper .right {
+        padding: 0;
+    }
+    .section_6 .line_adj .sec_6_content_wrapper .right .para_wrapper {
+        padding: 0;
+        padding-top: 30px;
+    }
+    .section_4 .sec_4_content_wrapper .right .accordian_parent .single_accordian_wrapper .icon_wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }    
+    .section_8 .sec_8_content_wrapper .left {
+        margin-bottom: 30px;
+    }
+    .section2 .liner .content_wrapper .cards {
+        padding: 0;
+    }
+    .services .container .grid {
+        padding: 0;
+    }
+    .section_8 .sec_8_content_wrapper .right .form_wrapper {
+        padding: 30px;
+    }
+    header .nav_lower ul.lower li.menu_itself .menu__wrapper {
+        display: none;
+    }
+    header .nav_lower ul.lower li.menu_itself.show .menu__wrapper {
+        display: block;
+    }
+    .section_6 .line_adj .sec_6_content_wrapper .right .two_vertical_rows .card_itself .content_wrapper {
+        padding: 50px;
+    }
+    .section_7 .line_adj_2 .sec_7_content_wrapper .blog_wrapper .image_wrapper img {
+        filter: none;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .bgImg_section .container {
-        padding: 150px 30px 0 30px !important;
+        padding: 150px 20px 0 20px !important;
     }
     .grid, .offers_section .cards {
         grid-template-columns: repeat(1, minmax(0, 1fr)) !important;

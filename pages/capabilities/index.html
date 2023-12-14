@@ -39,6 +39,7 @@
                             <li><a href="/pages/about-us/">ABOUT US</a></li>
                             <li><a href="/pages/resources/">RESOURCES</a></li>
                             <li><a href="/pages/careers/">START WORKING WITH US</a></li>
+                            <li><a href="/pages/contact-us/">CONTACT US</a></li>
                         </ul>
                         <div class="nav_lower">
                             <ul class="lower">
@@ -267,7 +268,7 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="menu_itself">
+                                <!-- <li class="menu_itself">
                                     <div class="inner_wrapper">
                                         <a href="#">Manufacturing</a> <span class="arrow"><svg
                                                 xmlns="http://www.w3.org/2000/svg" width="10" height="10"
@@ -276,7 +277,7 @@
                                                     d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
                                             </svg></span>
                                     </div>
-                                    <!-- <div class="menu__wrapper" style="left:0;">
+                                    <div class="menu__wrapper" style="left:0;">
                                         <ul class="menu__submenu">
                                             <li class="menu__subitem">
                                                 <a href="/marker/">
@@ -337,8 +338,8 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                    </div> -->
-                                </li>
+                                    </div>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -647,7 +648,7 @@
     
     <section class="main_section section_1 position-relative">
         <div class="bw_boxes"></div>
-        <div class="container px-0">
+        <div class="container px-lg-0">
             <div class="sec_1_content_wrapper">
               <!-- <h1 class="text-upper">Our Capabilities</h1> -->
               <h1 class="text-upper">Capabilities</h1>
@@ -947,6 +948,11 @@
                 document.querySelector("body").style.overflow = document.querySelector("body").style.overflow === "hidden" ? "auto" : "hidden";
             });
         }
+        window.addEventListener("resize", evt => {
+            if (navIcon && navIcon.parentElement?.classList.contains("active")) {
+                navIcon.click();
+            }
+        });
     </script>
 </body>
 </html>

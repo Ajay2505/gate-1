@@ -760,7 +760,7 @@ header {
       .right {
         .para_wrapper {
           padding: 50px;
-          border-bottom: 1px solid $line-color;
+          // border-bottom: 1px solid $line-color;
           h3 {
             color: $background-color;
           }
@@ -1047,6 +1047,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-top: 100px;
+    flex-wrap: wrap;
   }
 }
 
@@ -1511,6 +1512,10 @@ div#product {
   border-block: 1px solid #cfcfcf;
 }
 
+#cad-cam {
+  overflow-x: hidden;
+}
+
 #cad-cam .container {
   border-top: 1px solid #cfcfcf;
   border-inline: 1px solid #cfcfcf;
@@ -1594,4 +1599,8 @@ div#product {
 #cad-cam {
   background-color: $background-color-unedited;
   color: #fff;
+}
+
+footer .left .logo_wrapper {
+  margin-bottom: 30px;
 }

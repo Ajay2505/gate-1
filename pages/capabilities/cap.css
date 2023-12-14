@@ -293,8 +293,8 @@
 }
 
 .capabilities .cap:hover .absolute_block {
-    /* padding-right: 30%; */
     right: 0;
+    z-index: 1;
     bottom: 0;
     background-color: var(--changing-variable-background-color);
 }
@@ -331,6 +331,7 @@
     content: "";
     position: absolute;
     inset: 0;
+    pointer-events: none;
 }
 
 @media only screen and (max-width: 900px) {
