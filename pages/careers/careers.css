@@ -10,23 +10,31 @@
     padding-block: 40px;
 }
 
-.accordian_section .accordion-item ul {
+.accordian_section .accordion-item .accordion-body div ul {
     list-style: none;
     padding-left: 0;
 }
 
-.accordian_section .accordion-item ul li {
+.accordian_section .accordion-item .accordion-body ul li {
+    margin-bottom: 10px;
+}
+
+.accordian_section .accordion-item .accordion-body div ul li {
     display: flex;
     flex-wrap: nowrap;
     gap: 10px;
 }
 
-.accordian_section .accordion-item ul li .icon_wrapper {
+.accordian_section .accordion-item .accordion-body div ul li .icon_wrapper {
     flex-shrink: 0;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: 2px solid var(--changing-variable-background-color);
+}
+
+.accordian_section .accordion-item .accordion-body div ul li .content * {
+    margin: 0;
 }
 
 .accordian_section .accordion-flush .accordion-item:last-child {

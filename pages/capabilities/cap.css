@@ -327,12 +327,12 @@
     margin-bottom: 7px;
 }
 
-.cap::after {
+/* .cap::after {
     content: "";
     position: absolute;
     inset: 0;
     pointer-events: none;
-}
+} */
 
 @media only screen and (max-width: 900px) {
     .capabilities .cap .absolute_block {
